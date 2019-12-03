@@ -26,7 +26,7 @@ class Movies extends React.Component
             .then(response =>
             {
                 console.log(response);
-                this.setState({ movies: response.data.moives })
+                this.setState({ movies: response.data })
             });
     }
     render()
