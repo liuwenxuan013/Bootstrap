@@ -2,7 +2,7 @@ import React from 'react';
 
 import Mile from './Mile/Mile';
 import Temperature from './Temperature/Temperature';
-import { Z_FIXED } from 'zlib';
+
 
 class Tools extends React.Component
 {

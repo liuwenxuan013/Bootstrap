@@ -2,15 +2,12 @@ import React from 'react';
 import Clock from '../../../../components/Clock/Clock';
 import Converter from '../../../../components/Converter/Converter';
 import AdventureCard from '../../../../components/AdventureCard/AdventureCard';
+import ToggleButton from '../../../../components/ToggleButton/ToggleButton';
 
 function Features()
 {
-
     return (
-
-
         <div data-spy="scroll" data-target=".navbar" data-offset="50" style={{ margin: 0 }}>
-
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -53,21 +50,58 @@ function Features()
                 <h1>Adventure</h1>
                 <p>Adventure isn’t hanging off a rope on the side of a mountain or living among lions. Adventure is an attitude to experience everyday things.</p>
                 <p>Life is short and the world is wide...</p>
-                <div class='row'>
-                    <div class="col-sm-3" style={{ backgroundColor: "lavender" }}>
-                        <AdventureCard title="us" />
+                <div id="accordion">
+                    <div class="card bg-warning" style={{ margin: 0, border: "none", padding: 0, }} >
+                        {/* <div class="card-header" style={{ margin: 0, border: "none", padding: 0, }}> */}
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            < ToggleButton />
+                        </a>
+                        {/* </div> */}
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <div class='row'>
+                                    <div class="col-sm-3 bg-warning" >
+                                        <AdventureCard title="us" />
+                                    </div>
+                                    <div class="col-sm-3 bg-warning" >
+                                        <AdventureCard title="canada" />
+                                    </div>
+                                    <div class="col-sm-3 bg-warning" >
+                                        <AdventureCard title="china" />
+                                    </div>
+                                    <div class="col-sm-3 bg-warning" >
+                                        <AdventureCard title="france" />
+                                    </div>
+                                </div>
+                                <div class='row' style={{ marginTop: "10px" }}>
+                                    <div class="col-sm-3 bg-warning" >
+                                        <AdventureCard title="switzerland" />
+                                    </div>
+                                    <div class="col-sm-3 bg-warning" >
+                                        <AdventureCard title="germany" />
+                                    </div>
+                                    <div class="col-sm-3 bg-warning" >
+                                        <AdventureCard title="austria" />
+                                    </div>
+                                    <div class="col-sm-3 bg-warning" >
+                                        <AdventureCard title="italy" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-3" style={{ backgroundColor: "lavenderblush" }}>.col-sm-3</div>
-                    <div class="col-sm-3" style={{ backgroundColor: "lavender" }}>.col-sm-3</div>
-                    <div class="col-sm-3" style={{ backgroundColor: "lavenderblush" }}>.col-sm-3</div>
-
-
                 </div>
             </div>
             <div id="section3" class="container-fluid bg-danger" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
                 <h1>Arts</h1>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+
+                <h5>“Art enables us to find ourselves and lose ourselves at the same time.”    – Thomas Merton!</h5>
+                <h5>“To practice any art, no matter how well or how badly, is a way to make your soul grow, for heaven’s sake. So do it.”    – Kurt Vonnegut</h5>
+                <br />
+                <p>I think of art as the highest level of creativity. To me, it is one of the greatest sources of enjoyment</p>
+
             </div>
             <div id="section41" class="container-fluid bg-secondary" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
                 <h1>Movies</h1>
