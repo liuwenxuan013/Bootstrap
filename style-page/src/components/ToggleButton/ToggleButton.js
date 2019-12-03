@@ -1,7 +1,7 @@
 import React from 'react';
 class ToggleButton extends React.Component
 {
-    state = { doesShow: "true", }
+    state = { doesShow: this.props.show }
     clickHandler = () =>
     {
 

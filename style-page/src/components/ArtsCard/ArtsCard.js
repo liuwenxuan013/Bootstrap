@@ -1,6 +1,6 @@
 import React from 'react';
 import { InfoContext } from '../Info/Info';
-
+import Favorite from '../../components/Favorite/Favorite';
 class ArtsCard extends React.Component
 {
 
@@ -22,7 +22,7 @@ class ArtsCard extends React.Component
                                 <div class="card-body">
                                     <h4 class="card-title">{e.title}</h4>
                                     <p class="card-text">{e.desc}| @Laura |{e.time}</p>
-                                    <icon />
+                                    <Favorite />
                                 </div>
 
 

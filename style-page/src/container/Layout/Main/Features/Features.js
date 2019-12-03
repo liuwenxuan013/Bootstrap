@@ -4,6 +4,7 @@ import Converter from '../../../../components/Converter/Converter';
 import AdventureCard from '../../../../components/AdventureCard/AdventureCard';
 import ArtsCard from '../../../../components/ArtsCard/ArtsCard';
 import ToggleButton from '../../../../components/ToggleButton/ToggleButton';
+import Movies from '../../../../components/Movies/Movies';
 
 function Features()
 {
@@ -55,7 +56,7 @@ function Features()
                     <div class="card bg-warning" style={{ margin: 0, border: "none", padding: 0, }} >
                         {/* <div class="card-header" style={{ margin: 0, border: "none", padding: 0, }}> */}
                         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                            < ToggleButton />
+                            < ToggleButton show='true' />
                         </a>
                         {/* </div> */}
                         <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -105,7 +106,7 @@ function Features()
                 <div id="accordion">
                     <div class="card bg-danger" style={{ margin: 0, border: "none", padding: 0, }} >
                         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                            <ToggleButton />
+                            <ToggleButton show='true' />
                         </a>
                         <div id="collapseOne" class="collapse show" data-parent="#accordion">
                             <div class="card-body">
@@ -119,6 +120,20 @@ function Features()
                 <h1>Movies</h1>
                 <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
                 <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+                <div id="accordion">
+                    <div class="card bg-secondary" style={{ margin: 0, border: "none", padding: 0, }}>
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            <ToggleButton />
+                        </a>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <Movies />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div id="section42" class="container-fluid bg-success" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
                 <h1>Music</h1>
