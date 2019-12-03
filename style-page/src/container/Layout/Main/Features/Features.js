@@ -2,6 +2,7 @@ import React from 'react';
 import Clock from '../../../../components/Clock/Clock';
 import Converter from '../../../../components/Converter/Converter';
 import AdventureCard from '../../../../components/AdventureCard/AdventureCard';
+import ArtsCard from '../../../../components/ArtsCard/ArtsCard';
 import ToggleButton from '../../../../components/ToggleButton/ToggleButton';
 
 function Features()
@@ -101,7 +102,18 @@ function Features()
                 <h5>“To practice any art, no matter how well or how badly, is a way to make your soul grow, for heaven’s sake. So do it.”    – Kurt Vonnegut</h5>
                 <br />
                 <p>I think of art as the highest level of creativity. To me, it is one of the greatest sources of enjoyment</p>
-
+                <div id="accordion">
+                    <div class="card bg-danger" style={{ margin: 0, border: "none", padding: 0, }} >
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <ToggleButton />
+                        </a>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+                                <ArtsCard />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="section41" class="container-fluid bg-secondary" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
                 <h1>Movies</h1>

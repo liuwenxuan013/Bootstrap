@@ -79,12 +79,14 @@ export const myInfo = {
     { title: 'National' }],
 
     arts: [{
+        title: 'arts01',
         desc: 'Hands',
         imgUrl: "/images/arts/hands.jpg",
         time: '2019'
 
     },
     {
+        title: 'arts02',
         desc: 'Tree',
         imgUrl: '/images/arts/tree.jpg',
         time: '2019',
@@ -92,12 +94,13 @@ export const myInfo = {
     },
 
     {
+        title: 'arts03',
         desc: 'Portrait 001',
         imgUrl: '/images/arts/portrait1.jpg',
         time: '2019',
 
     },
-    // {
+    // { title:'arts01',
     //     desc: 'Zhong Kui',
     //     imgUrl: '/images/arts/zhongkui.jpg',
     //     time: '2015',
@@ -105,18 +108,21 @@ export const myInfo = {
     // },
 
     {
+        title: 'arts04',
         desc: 'Nature 002',
         imgUrl: '/images/arts/nature2.jpg',
         time: '2017',
 
     },
     {
+        title: 'arts05',
         desc: 'Nature 001',
         imgUrl: '/images/arts/nature1.jpg',
         time: '2017',
 
     },
     {
+        title: 'arts06',
         desc: 'Vision',
         imgUrl: '/images/arts/vision.jpg',
         time: '2019',
