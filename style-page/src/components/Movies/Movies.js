@@ -22,10 +22,11 @@ class Movies extends React.Component
             })
         });
 
-        axios.get("https://jsonplaceholder.typicode.com/posts")
+        axios.get("https://jsonplaceholder.typicode.com/db")
             .then(response =>
             {
-                this.setState({ movies: response.data })
+                console.log(response);
+                this.setState({ movies: response.data.moives })
             });
     }
     render()
@@ -36,7 +37,7 @@ class Movies extends React.Component
 
 
 
-            <div class="container mt-3">
+            <div class="container mt-8">
                 <h2>Movies</h2>
                 <p>Type something in the input field to search the table for Moive names, director or time:</p>
                 <input class="form-control" id="myInput" type="text" placeholder="Search.." />
@@ -44,18 +45,30 @@ class Movies extends React.Component
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>Movies</th>
+                            <th>Title</th>
+                            <th>Genre</th>
                             <th>Director</th>
-                            <th>Time</th>
+                            <th>Stars</th>
+                            <th>Nation</th>
+                            <th>Duration</th>
+                            <th>Year</th>
+                            <th>Rating</th>
+
                         </tr>
                     </thead>
                     <tbody id="myTable">
                         {this.state.movies.map(m =>
                         {
                             return <tr>
-                                <td>{m.id}</td>
                                 <td>{m.title}</td>
-                                <td>{m.body}</td>
+                                <td>{m.genre}</td>
+                                <td>{m.director}</td>
+                                <td>{m.stars}</td>
+                                <td>{m.nation}</td>
+                                <td>{m.duration}</td>
+                                <td>{m.time}</td>
+                                <td>{m.rating}</td>
+
                             </tr>
                         })}
                     </tbody>
