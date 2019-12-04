@@ -27,7 +27,7 @@ function About()
                     </div>
                     <div class='col-sm-8' style={{ float: "left " }}>
                         <h4>About me...</h4>
-                        <pre>{context.info.summary}</pre>
+                        <p>{context.info.summary}</p>
                         <div class="card" style={{ width: " 45%", float: "left" }}>
                             <img class="card-img-top" src="./images/ys.jpg" alt=" ID Card" style={{ width: "100%" }} />
 

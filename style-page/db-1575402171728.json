@@ -1,0 +1,17 @@
+{
+  "people": [
+    {
+      "id": 0,
+      "name": "Laura Liu",
+      "avatar": "",
+      "city": "Toronto",
+      "zipCode": "M2j 3W7",
+      "company": "Seneca College",
+      "phone": "647-554-2862",
+      "email": "liuwenxuan013@gmail.com"
+    },
+    {
+      "id": 1
+    }
+  ]
+}

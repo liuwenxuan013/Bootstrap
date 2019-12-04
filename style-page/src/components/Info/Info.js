@@ -7,7 +7,11 @@ export const myInfo = {
     title: 'Web Developer',
     tel: '647-554-2862',
     email: 'liuwenxuan013@gmail.com',
-    summary: 'I am passionate about creative work as a developer. \nWith 4 years of work experience related to software engineering and \nfurther study in computer programming,   I am challenging myself to \nbenefit from doing what I like to do and I\'m ready to contribute to \nit.   \n\nLooking for a job opportunity in Toronto ...',
+    summary:[
+        {desc:' * 4+ years experience as Software Engineer and Project Manager delivering continuous solution improvement by collaboration across multiple lines of business and IT Service teams.'},
+        {desc:' * On-site led platform launch and maintenance, completed State Grid Marketing Business Management Platform (SG186) deployment, solved all technical problems during the first phase of operation in a timely manner, and wrote \'SG186 instruction manual of common Problems & Solutions '},
+        {desc:' * Strong soft skills, building rapport and integrations with client operation teams. collaborated with 3rd party vendors on upgrading automated data reporting capabilities of web applications, reducing weekly report time by 20% after streamlining impact data collection with client support teams.'}
+    ],
     education: [{
         degree: 'Bachelor\'s',
         school: 'Nanjing Institute of Technology',
@@ -15,7 +19,42 @@ export const myInfo = {
         city: 'Nanjing, Jiangsu',
         country: 'China',
         start: '2009-09',
-        end: '2013-06'
+        end: '2013-06',
+        awards: [
+            { imgUrl:'./images/awards/National Inspirational Scholarship-2010.jpg',
+              title: 'National Inspirational Scholarship-2010' },
+            { imgUrl:'./images/awards/National Inspirational Scholarship-2012.jpg',
+                title: 'National Inspirational Scholarship-2012' },
+            { imgUrl:'./images/awards/Excellent Student Cadre-2010.png',
+                title: 'Excellent Student Cadre-2010' },
+            { imgUrl:'./images/awards/Excellent Student Cadre-2011.png',
+                title: 'Excellent Student Cadre-2011' },
+            { imgUrl:'./images/awards/Outstanding League Cadres-2010.png',
+                title: 'Outstanding League Cadres-2010' },
+            { imgUrl:'./images/awards/Top 10 Outstanding Student Leader-2012.png',
+                title: 'Top 10 Outstanding Student Leader-2012' },
+            { imgUrl:'./images/awards/Merit Student-2012.png',
+                title: 'Merit Student-2012' },
+            { imgUrl:'./images/awards/Merit Student-2013.png',
+                title: 'Merit Student-2013' },
+            { imgUrl:'./images/awards/Best Creativity Award-2009.png',
+                title: 'Best Creativity Award-2009' },
+            { imgUrl:'./images/awards/Poster Design Award-2012.png',
+                title: 'Poster Design Award-2012' },
+            { imgUrl:'./images/awards/University Scholarship-2010 Summer.png',
+                title: 'University Scholarship-2010 Summer' },
+            { imgUrl:'./images/awards/University Scholarship-2010 Winter.png',
+                title: 'University Scholarship-2010 Winter' },
+            { imgUrl:'./images/awards/University Scholarship-2011 Summer.png',
+                title: 'University Scholarship-2011 Summer' },
+            { imgUrl:'./images/awards/University Scholarship-2011 Winter.png',
+                title: 'University Scholarship-2011 Winter' },
+            { imgUrl:'./images/awards/University Scholarship-2012 Summer.png',
+                title: 'University Scholarship-2012 Summer' },
+            { imgUrl:'./images/awards/University Scholarship-2012 Winter.png',
+                title: 'University Scholarship-2012 Winter' },
+            ],
+
     },
     {
         degree: 'Diploma',
@@ -24,28 +63,33 @@ export const myInfo = {
         city: 'Toronto, ON',
         country: 'Canada',
         start: '2017-12',
-        end: '2019-10'
+        end: '2019-10',
+        awards: [
+            { imgUrl:'./images/awards/President’s Honour List for Academic Accomplishments.png',
+                title: 'President’s Honour List for Academic Accomplishments, 2019' },
+
+        ],
     },
     ],
-    workExperience: [{
-        jobTitle: 'Software Engineer&Project Manager',
-        company: 'Jiangsu Smart Software Engineering Company',
-        city: 'Nanjing, Jiangsu',
-        country: 'China',
-        start: '2013-09',
-        end: '2017-08',
-        description:
+    workExperience: [
         {
-            overall: 'Web platform development and project management related to the software application platform of the State Grid Corporation from the Architecture Design phase for a new project to final platform launch, and support nationwide.',
-            responsibilities:
-
-                ['- Co-authored high-quality documents based on user requirements, including requirements analysis, outline design, detailed design documents',
-                    '- The sole responsibility for the on-site operation and maintenance of the SG186 platform. Supporting the smoothness of the users’ workflow, solving platform operation problems in time and improving the web platform met all user demands.',
-                    '- Attend project and team meetings, interact and collaborate with team members and other third-party vendors to resolve platform issues and meet customer requirements',
-                    '- Contribute to successful project delivery',
-                    '- Provided data support for other departments through SQL Query',
-                ]
-        }
+            jobTitle: 'Software Engineer&Project Manager',
+            company: 'Jiangsu Smart Software Engineering Company',
+            city: 'Nanjing, Jiangsu',
+            country: 'China',
+            start: '2013-09',
+            end: '2017-08',
+            description:
+            {
+                overall: 'Web platform development and project management related to the software application platform of the State Grid Corporation, beginning at the Architecture Design phase for a new project to final platform launch, and support nationwide',
+                responsibilities:
+                    [
+                        {desc:'- Co-authored high-quality documents based on user requirements, including requirements analysis, outline design, detailed design documents'},
+                        {desc: '- Assumed sole responsibility for on-site operation and maintenance of the SG186 platform. Supported the smoothness of users’ workflow, solved platform operation problems in time and improved the web platform to meet all user requirements'},
+                        {desc: '- - Attended project and team meetings, collaborated with team members and other 3rd party vendors to resolve platform issues and meet client requirements'},
+                        {desc: '- Contributed to successful project delivery in 2017'}
+                    ]
+            }
     },
     {
         jobTitle: 'Sql Server DBA',
@@ -56,12 +100,12 @@ export const myInfo = {
         end: '2013-08',
         description:
         {
-            overall: 'Responsible for performing data quality, check and update data directly with SQL statements. Worked with back-office personnel to resolve issues and provide improvements.',
+            overall: 'Responsible for performing data quality reviews and update data directly with SQL systems. Worked with back-office personnel to resolve issues and provide enhancements',
             responsibilities:
 
-                ['- Design, write, test and implement SQL solutions for reporting and updates',
-                    '- Provide data support',
-                    '- Work with vendors to resolve problems and to implement new software solutions',
+                [ {desc: '- Designed, wrote, tested and implemented SQL solutions for reporting needs'},
+                    {desc:  '- Provided data support on an on-going basis'},
+                    {desc:  '- Worked with 3rd party vendors to resolve problems and implement new software solutions'},
                 ]
         }
     },
@@ -75,9 +119,15 @@ export const myInfo = {
     { title: 'Extensive experience with strong organizational skills and problem-solving.' }
 
     ],
-    awards: [{ title: 'President Honour (Seneca College)' },
-    { title: 'National' }],
-
+  certificate: [
+      { title: 'National Computer Rank Examination Certificate',
+          imgUrl:'./images/awards/National Computer Rank Examination Certificate.png',
+          time:'2011/05 - Present',
+  },
+    { title: 'Jiangsu Province Computer Rank Examination Certificate',
+        imgUrl:'./images/awards/Jiangsu Province Computer Rank Examination Certificate.png',
+        time:'2011/02 - Present',
+    }],
     arts: [{
         title: 'arts01',
         desc: 'Hands',
@@ -92,7 +142,6 @@ export const myInfo = {
         time: '2019',
 
     },
-
     {
         title: 'arts03',
         desc: 'Portrait 001',
@@ -100,13 +149,12 @@ export const myInfo = {
         time: '2019',
 
     },
-    // { title:'arts01',
-    //     desc: 'Zhong Kui',
-    //     imgUrl: '/images/arts/zhongkui.jpg',
-    //     time: '2015',
+    { title:'arts07',
+        desc: 'Zhong Kui',
+        imgUrl: '/images/arts/zhongkui.jpg',
+        time: '2015',
 
-    // },
-
+    },
     {
         title: 'arts04',
         desc: 'Nature 002',
@@ -128,7 +176,6 @@ export const myInfo = {
         time: '2019',
 
     },
-
     ],
     adventureImg:
     {
@@ -528,10 +575,6 @@ export const myInfo = {
     }
 
 
-
-
-
-
-}
+};
 
 export const InfoContext = React.createContext({ info: myInfo });

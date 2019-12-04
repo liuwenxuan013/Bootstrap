@@ -1,12 +1,12 @@
 import React from 'react';
 class ToggleButton extends React.Component
 {
-    state = { doesShow: this.props.show }
+    state = { doesShow: this.props.show };
     clickHandler = () =>
     {
 
         this.setState({ doesShow: !this.state.doesShow })
-    }
+    };
 
     render()
     {

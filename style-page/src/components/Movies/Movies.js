@@ -22,11 +22,11 @@ class Movies extends React.Component
             })
         });
 
-        axios.get("https://jsonplaceholder.typicode.com/db")
+        axios.get("https://my-json-server.typicode.com/liuwenxuan013/demo/db")
             .then(response =>
             {
                 console.log(response);
-                this.setState({ movies: response.data })
+                this.setState({ movies: response.data.movies })
             });
     }
     render()
@@ -38,8 +38,8 @@ class Movies extends React.Component
 
 
             <div class="container mt-8">
-                <h2>Movies</h2>
-                <p>Type something in the input field to search the table for Moive names, director or time:</p>
+                <h2>My Favorite List</h2>
+
                 <input class="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
                 <table class="table table-bordered">
@@ -59,8 +59,10 @@ class Movies extends React.Component
                     <tbody id="myTable">
                         {this.state.movies.map(m =>
                         {
-                            return <tr>
+                            return <tr key={m.id}>
+
                                 <td>{m.title}</td>
+
                                 <td>{m.genre}</td>
                                 <td>{m.director}</td>
                                 <td>{m.stars}</td>
