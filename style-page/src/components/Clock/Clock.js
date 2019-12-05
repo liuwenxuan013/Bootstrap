@@ -25,10 +25,13 @@ class Clock extends React.Component
     {
         return (
             <div>
+                <h4 style={{textAlign:"center"}}>Time flies</h4>
+                <p style={{textAlign:"center"}} > Time plays in my favor</p>
                 <p style={{
                     textAlign: 'center',
                     padding: '0',
                     marginBottom: '0',
+
 
 
                 }}> {this.state.date.toLocaleTimeString()}</p>

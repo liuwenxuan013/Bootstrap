@@ -37,12 +37,12 @@ class Music extends React.Component
 
 
 
-            <div class="container mt-8">
-                <h2>Playlist</h2>
+            <div >
+                <h4>Playlist</h4>
 
                 <input class="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
-                <table class="table table-bordered">
+                <table class="table table-sm table-hove" style ={{textAlign:"center"}}>
                     <thead>
                         <tr>
                             <th>Title</th>

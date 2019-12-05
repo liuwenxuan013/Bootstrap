@@ -11,11 +11,13 @@ import { InfoContext, myInfo } from '../../../components/Info/Info';
 function Main()
 {
     return (
-        <div className="main">
-            <div class="jumbotron" style={{ marginBottom: 0, paddingBottom: 0, borderBottom: 0, }}>
-                <h1>Nice to meet you...</h1>
-                <p>Hi I'm Laura</p>
-            </div>
+        <div className="main" style={{marginTop:"58px"}}>
+            {/*<div class="jumbotron" style={{ margin: 0, padding: 0, border: 0, }}>*/}
+
+            {/*    <h4>Nice to meet you...</h4>*/}
+            {/*    <p>I'm Laura</p>*/}
+
+            {/*</div>*/}
             <InfoContext.Provider value={{ info: myInfo }}>
                 <Switch>
                     <Route exact path="/" component={Home} />

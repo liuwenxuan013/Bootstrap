@@ -8,7 +8,7 @@ function ResultText(props)
         return <p style={{ color: 'white' }} >The water would not boil </p>
     if (props.celsius >= 100)
         return <p style={{ color: '#2d5bb9' }}>The water would boil </p>
-    return <p></p>
+    return <p style={{textAlign:"center", color:"#a5e7f3"}}> <small>~ Play to see ~  </small>  </p>
 
 
 };

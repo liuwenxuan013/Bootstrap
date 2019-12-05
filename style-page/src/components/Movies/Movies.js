@@ -38,11 +38,11 @@ class Movies extends React.Component
 
 
             <div class="container mt-8">
-                <h2>My Favorite List</h2>
+                <h4>My Favorite List</h4>
 
                 <input class="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
-                <table class="table table-bordered">
+                <table class="table table-sm  table-hove" style={{textAlign:"center"}}>
                     <thead>
                         <tr>
                             <th>Title</th>

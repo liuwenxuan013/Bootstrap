@@ -19,7 +19,7 @@ class UserInput extends React.Component
         return <div>
             <label for={scaleNames[scale]}></label>
 
-            <input autoFocus
+            <input
                 type="text"
                 // class="form-control"
                 placeholder={'Enter speed in ' + scaleNames[scale]}

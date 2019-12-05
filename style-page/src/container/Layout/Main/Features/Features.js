@@ -6,57 +6,64 @@ import ArtsCard from '../../../../components/ArtsCard/ArtsCard';
 import ToggleButton from '../../../../components/ToggleButton/ToggleButton';
 import Movies from '../../../../components/Movies/Movies';
 import Music from '../../../../components/Music/Music';
-import People from '../../../../components/People/People';
 import Companies from '../../../../components/Companies/Companies';
+import {Link, Route, Switch} from 'react-router-dom';
+
 
 function Features()
 {
-    return (
+    return (<div>
+
+
+
         <div data-spy="scroll" data-target=".navbar" data-offset="50" style={{ margin: 0 }}>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+            <nav class="navbar navbar-expand-sm justify-content-center bg-info navbar-light ">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#section1">Programming</a>
+                        <a class="nav-link" href="#programming">Programming</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2">Adventure</a>
+                        <a class="nav-link" href="#adventure">Adventure</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section3">Arts</a>
+                        <a class="nav-link" href="#arts">Arts</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            Others
-      </a>
+                            Others</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#section41">Movies</a>
-                            <a class="dropdown-item" href="#section42">Music</a>
+                            <a class="dropdown-item" href="#movies">Movies</a>
+                            <a class="dropdown-item" href="#music">Music</a>
                         </div>
                     </li>
                 </ul>
             </nav>
 
-            <div id="section1" class="container-fluid bg-info" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
-                <h1>Programming</h1>
+            <div id="programming" class="container-fluid bg-info" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+                <h3  >Programming</h3>
+                <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                 <p>A Web Developer not only plays a crucial role in Web design, development,
                     testing, operation, and support, but also has a great influence on marketing
                      and users retention. The deliverables created help clients be more efficient
                       and provide better services in this increasingly competitive market. </p>
                 <p>I believe my experience and expertise in software development will be a valuable
                     resource in accomplishing these goals.</p>
+                </blockquote>
                 <hr />
-                <h4>Play widget</h4>
+                <h5 style={{textAlign:"center", color:"#a5e7f3"}}>~ Play with Widgets ~</h5>
                 <Clock />
                 <hr />
                 <Converter />
                 <hr />
-                <div id="accordion">
-                    <div class="card bg-info" style={{margin: 0, border: "none", padding: 0,}}>
-                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-                            <ToggleButton/>
+                <div id="accordionProgramming">
+                    <div class="card bg-info" style={{margin: 0, border: "none", padding: 0}}>
+                        <a class="card-link" data-toggle="collapse s" href="#collapseProgramming"
+                           style={{ marginLeft:"44%",width:"120px"}}
+                        >
+                            <ToggleButton show="false"/>
                         </a>
-                        <div id="collapseFive" class=" row collapse" data-parent="#accordion">
-                            <div class=" card-body " >
+                        <div id="collapseProgramming" class="collapse" data-parent="#accordionProgramming">
+                            <div class="card-body" >
                                 <Companies />
                             </div>
                         </div>
@@ -64,9 +71,9 @@ function Features()
                 </div>
 
             </div>
-            <div id="section2" class="container-fluid bg-warning" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
-                <h1>Adventure</h1>
-                <blockquote className="blockquote">
+            <div id="adventure" class="container-fluid bg-warning" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+                <h3>Adventure</h3>
+                <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                     <p>Adventure isn’t hanging off a rope on the side of a mountain or living among lions. Adventure is an attitude to experience everyday things.</p>
                     <p>Life is short and the world is wide...</p>
                 </blockquote>
@@ -76,13 +83,14 @@ function Features()
                 <div id="accordion">
                     <div class="card bg-warning" style={{ margin: 0, border: "none", padding: 0, }} >
                         {/* <div class="card-header" style={{ margin: 0, border: "none", padding: 0, }}> */}
-                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne"
+                           style={{ marginLeft:"44%",width:"120px"}}>
                             < ToggleButton show='true' />
                         </a>
+
                         {/* </div> */}
                         <div id="collapseOne" class="collapse show" data-parent="#accordion">
                             <div class="card-body">
-
                                 <div class='row'>
                                     <div class="col-sm-3 bg-warning" >
                                         <AdventureCard title="us" />
@@ -117,22 +125,24 @@ function Features()
                 </div>
             </div>
             <div id="section3" class="container-fluid bg-danger" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
-                <h1>Arts</h1>
+                <Route  path="/features#section3"  >  <h3>Arts</h3></Route>
 
-                <blockquote className="blockquote">
-                    <p>Art enables us to find ourselves and lose ourselves at the same time.</p>
-                    <footer className="blockquote-footer">From Thomas Merton</footer>
+                <blockquote className="blockquote" style={{padding:"15px 50px 0"}} >
+                    <p>"  Art enables us to find ourselves and lose ourselves at the same time.  "</p>
+                    <footer className="blockquote-footer" style={{color:"#f5bcc4"}}>Thomas Merton</footer>
                 </blockquote>
-                <blockquote className="blockquote">
-                    <p>To practice any art, no matter how well or how badly, is a way to make your soul grow, for heaven’s sake. So do it.</p>
-                    <footer className="blockquote-footer">From Kurt Vonnegut</footer>
+                <blockquote className="blockquote" style={{padding:"0  50px 15px"}} >
+                    <p>"  To practice any art, no matter how well or how badly, is a way to make your soul grow, for heaven’s sake. So do it.  "</p>
+                    <footer className="blockquote-footer" style={{color:"#f5bcc4"}}>Kurt Vonnegut</footer>
                 </blockquote>
 
                 <br />
-                <p>I think of art as the highest level of creativity. To me, it is one of the greatest sources of enjoyment</p>
+                <p style={{padding:"0 50px "}} >
+                    I think of art as the highest level of creativity. To me, it is one of the greatest sources of enjoyment</p>
                 <div id="accordion">
                     <div class="card bg-danger" style={{ margin: 0, border: "none", padding: 0, }} >
-                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                        <a class="card-link" data-toggle="collapse" href="#collapseTwo"
+                           style={{ marginLeft:"44%",width:"120px"}}>
                             <ToggleButton show='true' />
                         </a>
                         <div id="collapseTwo" class="collapse show" data-parent="#accordion">
@@ -144,13 +154,17 @@ function Features()
                 </div>
             </div>
             <div id="section41" class="container-fluid bg-secondary" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
-                <h1>Movies</h1>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <h3>Movies</h3>
+                <blockquote className="blockquote" style={{padding:"15px 50px"}} >
+                <p>"  The whole of life is just like watching a film. Only it's as though you always get in ten minutes after the big picture has started, and no-one will
+                    tell you the plot, so you have to work it out all yourself from the clues.  " </p>
+                    <footer className="blockquote-footer" style={{color:"lightGray"}}>Terry Pratchett</footer>
 
+                </blockquote>
                 <div id="accordion">
                     <div class="card bg-secondary" style={{ margin: 0, border: "none", padding: 0, }}>
-                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree"
+                           style={{ marginLeft:"44%",width:"120px"}}>
                             <ToggleButton  />
                         </a>
                         <div id="collapseThree" class="collapse" data-parent="#accordion">
@@ -163,13 +177,15 @@ function Features()
 
             </div>
             <div id="section42" class="container-fluid bg-success" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
-                <h1>Music</h1>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-
+                <h3>Music</h3>
+                <blockquote className="blockquote" style={{padding:"15px 50px"}} >
+                    <p>“  After silence, that which comes nearest to expressing the inexpressible is music. ” </p>
+                    <footer className="blockquote-footer" style={{color:"lightGray"}}>Aldous Huxley</footer>
+                </blockquote>
             <div id="accordion">
                 <div className="card bg-success" style={{margin: 0, border: "none", padding: 0,}}>
-                    <a className="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                    <a className="collapsed card-link" data-toggle="collapse" href="#collapseFour"
+                       style={{ marginLeft:"44%",width:"120px"}}>
                         <ToggleButton  />
                     </a>
                     <div id="collapseFour" className="collapse" data-parent="#accordion">
@@ -181,7 +197,7 @@ function Features()
             </div>
         </div >
         </div>
-
+        </div>
 
     );
 }

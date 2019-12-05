@@ -7,17 +7,20 @@ class ToggleButton extends React.Component
 
         this.setState({ doesShow: !this.state.doesShow })
     };
-
     render()
     {
-        let text = this.state.doesShow ? "Hide" : "Show more";
+        let text = this.state.doesShow ? "   Hide  " : "Show more ";
+
 
         return (
 
             <button type="button"
-                class="btn btn-secondary"
-                onClick={this.clickHandler}>{text}</button>
+                class="btn text-light border-light"
+                    style={{width:"110px"}}
+                onClick={this.clickHandler}>{text}
 
+            </button>
+      
         );
     }
 }

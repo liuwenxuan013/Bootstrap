@@ -7,6 +7,8 @@ export const myInfo = {
     title: 'Web Developer',
     tel: '647-554-2862',
     email: 'liuwenxuan013@gmail.com',
+    sub:' I am passionate about creative work as a developer, With 4 years of work experience related to software engineering and further study in computer programming, I am challenging myself to benefit from doing what I like to do and I\'m ready to contribute to it',
+    sub2: 'Looking for a job opportunity in Toronto ... ',
     summary:[
         {desc:' * 4+ years experience as Software Engineer and Project Manager delivering continuous solution improvement by collaboration across multiple lines of business and IT Service teams.'},
         {desc:' * On-site led platform launch and maintenance, completed State Grid Marketing Business Management Platform (SG186) deployment, solved all technical problems during the first phase of operation in a timely manner, and wrote \'SG186 instruction manual of common Problems & Solutions '},

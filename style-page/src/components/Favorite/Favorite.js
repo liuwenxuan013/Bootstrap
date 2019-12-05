@@ -1,31 +1,28 @@
 
-import React, { useState, useEffect } from 'react';
-function Favorite()
+import React  from 'react';
+import Liked from "./Liked";
+import Dislike from "./Dislike";
+class  Favorite extends React.Component
 {
-    const [count, setCount] = useState(99);
-
-    useEffect(() =>
-    {
-        document.getElementsByClassName('fas fa-heart').count = '${count}';
-    }
-    );
+    state={
+        count:Math.round(Math.random() * 10),
+        isLike:false};
 
 
+    clickHandler=()=>{
+        this.setState({isLike:!this.state.isLike})
+    };
+    render(){ return (
 
-    return (
+        <button onClick={this.clickHandler}
+        style={{border:"none",width:"49px"}}
 
-        <i
-            class="fas fa-heart "
-            style={{ color: "#d9d9d9" }}
-            onClick={() =>
-            {
-                setCount(count + 1);
+        >
+            {this.state.isLike? <Liked count={this.state.count}/>:<Dislike count={this.state.count}/>}
+        </button>
 
-            }}
+    );}
 
-        > {count}</i>
-
-    );
 
 }
 export default Favorite;

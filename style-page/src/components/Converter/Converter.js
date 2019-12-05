@@ -10,31 +10,34 @@ class Tools extends React.Component
     temperatureHandler = () =>
     {
         this.setState({ isClick: 'temperature' });
-    }
+    };
     milesHandler = () =>
     {
         this.setState({ isClick: 'mile' });
-    }
+    };
     render()
     {
-        return <div class="row " >
-            <div class="btn-group-vertical col-sm-3" style={{ height: "100px" }}>
-                <button type="button"
-                    class="btn btn-secondary"
+        return <div >
+            <h4 style={{textAlign:"center"}}>Unit Converter</h4>
+            <div style={{textAlign:"center" ,marginBottom:"30px"}} >
+
+
+
+                <a className="text-warning"
                     onClick={this.milesHandler}>
-                    Miles</button>
-                <button type="button"
-                    class="btn btn-secondary"
+                    Miles|
+                </a>
+                <a className="text-warning"
                     onClick={this.temperatureHandler}
-                >Temperature</button>
-
+                >Temperature
+                </a>
             </div>
 
-            <div class="col-sm-8" style={{ paddingLeft: "20%" }}>
-                {this.state.isClick === 'temperature' ? <Temperature /> : <Mile />}
-            </div>
-
+                <div style={{textAlign: "center"}}>
+                    {this.state.isClick === 'temperature' ? <Temperature/> : <Mile/>}
+                </div>
         </div>
+
     }
 }
 export default Tools;

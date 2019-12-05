@@ -4,7 +4,7 @@ function Nav()
 {
     return (
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 
             <Link class="navbar-brand" to="/">
                 <img src="./images/vision.jpg" alt="logo" class="rounded-circle" style={{ width: "40px" }} />
@@ -17,7 +17,7 @@ function Nav()
                     <Link class="nav-link" to="/about">Why me?</Link>
                 </li>
                 <li class="nav-item">
-                    <Link class="nav-link" to="/features">Who am I</Link>
+                    <Link class="nav-link" to="/features">Know more me</Link>
                 </li>
                 <li class="nav-item">
                     <Link class="nav-link" to="/profile">Profile</Link>

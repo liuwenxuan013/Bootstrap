@@ -24,7 +24,7 @@ class UserInput extends React.Component
             {/* <div class="form-group"> */}
             <label for={scaleNames[scale]}> </label>
 
-            <input autoFocus
+            <input
                 type="text"
                 value={temperature}
                 onChange={this.changeHandler}

@@ -37,11 +37,11 @@ class Companies extends React.Component
 
         return (
             <div class="container ">
-                <h2 style={{textAlign:"center"}}>Companies</h2>
+                <h4 style={{textAlign:"center"}}>Companies</h4>
                 <p style={{textAlign:"center"}} >Find your job opportunity </p>
                 <input class="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
-                <table class="table table-sm table-responsive table-hover" >
+                <table class="table table-sm table-responsive table-hover" style= {{textAlign:"center"}}>
                     <thead>
                     <tr>
 

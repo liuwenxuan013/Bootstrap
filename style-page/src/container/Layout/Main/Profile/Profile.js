@@ -1,10 +1,29 @@
 import React from 'react';
 import { InfoContext } from '../../../../components/Info/Info';
-import {Link} from "react-router-dom";
-function Profile()
+
+import $ from 'jquery';
+import MyLinks from "../../../../components/MyLinks/MyLinks";
+import ContactLink from "../../../../components/MyLinks/ContactLink";
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
+
+import 'bootstrap';
+$('#addSupModal').modal('show');
+
+
+class Profile extends React.Component
 {
+    componentDidMount() {
+        $(document).ready(function () {
+            $('.toast').toast('show')
+        });
+    };
+
+
+
+    render(){
     return (
         <div >
+
             <InfoContext.Consumer>
                 {(context) => {
 
@@ -12,23 +31,63 @@ function Profile()
                         <div id="accordion"  >
 
 
-                            <div className="card" style={{padding:"40px"}}>
+                            <div className="card " style={{padding:"40px"}}>
+                                <div className="row">
+                                <div  className="col-6" style={{width:"30%" }} >
 
                                 <h1>{context.info.name}</h1>
-                                <h6>{context.info.title}</h6>
+
+                                <h6>{context.info.title}  </h6>
+                                <ContactLink/>
                                 <p>Toronro,ON</p>
-                                <p>{context.info.email}</p>
-                                <p>{context.info.tel}</p>
+                                   <MyLinks  />
+                                <br/>
+                            </div>
+
+                            <div className="col-6" >
+                                <div class="toast" data-autohide="false" style={{backgroundColor:"lightBlue"}}>
+                                    <div class="toast-header">
+                                        <strong class="mr-auto text-primary">Hi, Read me</strong>
+                                        <small class="text-muted">Read later</small>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                                    </div>
+                                    <div class="toast-body" >
+                                        <p>Please download my resume and help it
+                                        find a HR, I am looking forward to a Web
+                                            developer job opportunity in Toronto...</p>
+                                        <p>Thank you </p>
+
+                                        <a href="./images/Laura Liu-Resume.pdf" download="Laura Liu - Resume">
+                                            <CloudDownloadIcon/>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                </div>
+                                </div>
+
+                            {/*</div>*/}
 
 
-                                    <a className="card-link" data-toggle="collapse" href="#collapseTwo">
-                                        <h4 >EXECUTIVE SUMMARY</h4>
-                                    </a>
+
+                            </div>
+
+                                <div className="card" style={{padding:"40px"}}>
+
+                                <a className="card-link" data-toggle="collapse" href="#collapseTwo">
+                                    <h4 >EXECUTIVE SUMMARY</h4>
+                                </a>
 
                                 {context.info.summary.map((s,index)=>{
                                     return <p key={index}>{s.desc}
                                     </p>
                                 })}
+                                </div>
+
+                                <div className="card" style={{padding:"40px"}}>
+
+
                                 <a className="card-link " data-toggle="collapse" href="#collapseOne" >
                                     <h4 style={{ padding:"20px 0"}}>PROFESSIONAL EXPERIENCE</h4>
                                 </a>
@@ -60,6 +119,9 @@ function Profile()
                                     )
                                 })}
                             </div>
+
+
+
                             <div className="card" style={{padding:"40px"}}>
                                 <a className="card-link" data-toggle="collapse" href="#collapseTwo">
                                     <h4 >EDUCATION</h4>
@@ -99,11 +161,11 @@ function Profile()
                                 </a>
                                 <div id="collapseThree" className="collapse show" data-parent="#accordion">
                                     <div className="card-body">
-                                {context.info.skills.map(e => {
-                                    return (
-                                        <li key={e.title}>{e.title} </li>
-                                        )})}
-                                        </div>
+                                        {context.info.skills.map(e => {
+                                            return (
+                                                <li key={e.title}>{e.title} </li>
+                                            )})}
+                                    </div>
                                 </div>
                             </div>
                             <div className="card" style={{ padding:"40px"}}>
@@ -118,14 +180,14 @@ function Profile()
 
 
 
-                                            <div key={index} className="card" style={{width: " 200px", height:"150px", float: "left"}}>
-                                                <img className="card-img-top" src={c.imgUrl}
-                                                     alt={c.title} style={{width: "100%" ,height:"83%"}}/>
-                                                <div className="card-body" style={{margin:0,padding:0,float: "left"}}>
-                                                    <p className="card-text" style={{textAlign:"center",fontSize:"10px" ,margin:0,padding:0}}>{c.title}</p>
-                                                    <p className="card-text" style={{textAlign:"center",fontSize:"10px" ,margin:0,padding:0}}>{c.time}</p>
+                                                <div key={index} className="card" style={{width: " 200px", height:"150px", float: "left"}}>
+                                                    <img className="card-img-top" src={c.imgUrl}
+                                                         alt={c.title} style={{width: "100%" ,height:"83%"}}/>
+                                                    <div className="card-body" style={{margin:0,padding:0,float: "left"}}>
+                                                        <p className="card-text" style={{textAlign:"center",fontSize:"10px" ,margin:0,padding:0}}>{c.title}</p>
+                                                        <p className="card-text" style={{textAlign:"center",fontSize:"10px" ,margin:0,padding:0}}>{c.time}</p>
+                                                    </div>
                                                 </div>
-                                            </div>
 
 
                                             )})}
@@ -133,8 +195,8 @@ function Profile()
                                 </div>
                             </div>
 
-                            </div>
-                        </div>)
+                        </div>
+                    </div>)
                 }
                 }
             </InfoContext.Consumer>
@@ -142,5 +204,7 @@ function Profile()
         </div>
 
     );
+}
+
 }
 export default Profile;
