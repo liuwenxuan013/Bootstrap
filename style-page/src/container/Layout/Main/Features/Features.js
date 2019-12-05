@@ -7,7 +7,6 @@ import ToggleButton from '../../../../components/ToggleButton/ToggleButton';
 import Movies from '../../../../components/Movies/Movies';
 import Music from '../../../../components/Music/Music';
 import Companies from '../../../../components/Companies/Companies';
-import { Route} from 'react-router-dom';
 import 'bootstrap';
 
 function Features()
@@ -29,7 +28,7 @@ function Features()
                         <a className="nav-link" href="#arts">Arts</a>
                     </li>
                     <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a className="nav-link dropdown-toggle" href="#movies" id="navbardrop" data-toggle="dropdown">
                             Others</a>
                         <div className="dropdown-menu">
                             <a className="dropdown-item" href="#movies">Movies</a>

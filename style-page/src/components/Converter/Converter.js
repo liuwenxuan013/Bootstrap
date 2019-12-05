@@ -23,14 +23,14 @@ class Tools extends React.Component
 
 
 
-                <a className="text-warning"
+                <button className="text-warning bg-info" style={{border:"none"}}
                     onClick={this.milesHandler}>
-                    Miles|
-                </a>
-                <a className="text-warning"
+                    Miles
+                </button>|
+                <button className="text-warning bg-info" style={{border:"none"}}
                     onClick={this.temperatureHandler}
                 >Temperature
-                </a>
+                </button>
             </div>
 
                 <div style={{textAlign: "center"}}>

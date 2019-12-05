@@ -18,7 +18,8 @@ class Companies extends React.Component
                 var value = $(this).val().toLowerCase();
                 $("#myTable tr").filter(function ()
                 {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                    return null;
                 });
             })
         });

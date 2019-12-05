@@ -1,5 +1,5 @@
 import React from 'react';
-import { InfoContext, myInfo } from '../Info/Info';
+import { InfoContext} from '../Info/Info';
 
 class AdventureCard extends React.Component
 {

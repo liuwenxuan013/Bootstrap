@@ -1,20 +1,21 @@
 import React from 'react';
 import { InfoContext } from '../../../../components/Info/Info';
 
-import Avatar from '@material-ui/core/Avatar';
+
 import Chip from '@material-ui/core/Chip';
 import FaceIcon from '@material-ui/icons/Face';
-import DoneIcon from '@material-ui/icons/Done';
+
 
 import $ from 'jquery';
 import MyLinks from "../../../../components/MyLinks/MyLinks";
 import ContactLink from "../../../../components/MyLinks/ContactLink";
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import pink from '@material-ui/core/colors/pink';
+
 import 'bootstrap';
+import OtherLinks from "../../../../components/MyLinks/OtherLinks";
 $('#addSupModal').modal('show');
 
-const primary = pink[300];
+
 
 class Profile extends React.Component
 {
@@ -77,7 +78,12 @@ style={{color:'white',marginBottom:"20px"}}
                                 <h6>{context.info.title}  </h6>
                                 <ContactLink/>
                                 <p>Toronro,ON</p>
-                                   <MyLinks  />
+                                    <div className="row" >
+                                        <div  className="col-sm-5" style={{marginRight:0,paddingRight:0,textAlign:"center"}}>
+                                            <MyLinks />
+                                        </div>|
+                                    <div className="col-sm-5" > <OtherLinks  /></div></div>
+
 
                                 <br/>
                             </div>

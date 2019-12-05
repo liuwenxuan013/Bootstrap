@@ -17,7 +17,7 @@ class UserInput extends React.Component
         let speed = this.props.speed;
         let scale = this.props.scale;
         return <div>
-            <label for={scaleNames[scale]}></label>
+            <label htmlFor = {scaleNames[scale]}> </label>
 
             <input
                 type="text"

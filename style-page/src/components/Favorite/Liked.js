@@ -6,7 +6,7 @@ function Liked(props)
 
     useEffect(() =>
         {
-            document.getElementsByClassName('fas fa-heart').count = '${count}';
+            document.getElementsByClassName('fas fa-heart').count = '$count';
         }
     );
 

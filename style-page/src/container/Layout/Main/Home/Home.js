@@ -1,22 +1,24 @@
 import React from 'react';
+import MyLinks from "../../../../components/MyLinks/MyLinks";
+import OtherLinks from "../../../../components/MyLinks/OtherLinks";
 
 
 function Home()
 {
-    return (
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
+    return (<div>
+        <div id="demo" className="carousel slide" data-ride="carousel" style={{marginTop:"58px"}}>
+            <ul className="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" className="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
                 <li data-target="#demo" data-slide-to="3"></li>
                 <li data-target="#demo" data-slide-to="4"></li>
                 <li data-target="#demo" data-slide-to="5"></li>
             </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active" >
+            <div className="carousel-inner">
+                <div className="carousel-item active" >
                     <img src="https://www.wallpaperup.com/uploads/wallpapers/2014/03/18/301966/50c2239a88b5336315269c0ac72a8e46-700.jpg" alt="superman" width="1100" height="500" />
-                    <div class="carousel-caption">
+                    <div className="carousel-caption">
                         <h3>I am a Web Developer</h3>
                         <p>...but not just a Web Developer</p>
                     </div>
@@ -68,10 +70,21 @@ function Home()
             <a className="carousel-control-next" href="#demo" data-slide="next">
                 <span className="carousel-control-next-icon"></span>
             </a>
+
+
         </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 
+            <div className="row" >
+                <div  className="col-sm-6" style={{marginRight:0,paddingRight:0,textAlign:"right"}}>
+                    <MyLinks />
+                </div>|
+                <div className="col-sm-3" style={{marginRight:0,paddingRight:0,textAlign:"left"}}> <OtherLinks  /></div></div>
 
-
+</div>
 
 
 

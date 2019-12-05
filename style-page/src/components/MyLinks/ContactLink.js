@@ -1,5 +1,5 @@
 import React from 'react';
-import Info, {InfoContext} from '../Info/Info';
+import {InfoContext} from '../Info/Info';
 
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';

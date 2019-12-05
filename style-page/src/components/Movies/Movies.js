@@ -17,7 +17,8 @@ class Movies extends React.Component
                 var value = $(this).val().toLowerCase();
                 $("#myTable tr").filter(function ()
                 {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                    return null;
                 });
             })
         });
@@ -25,7 +26,7 @@ class Movies extends React.Component
         axios.get("https://my-json-server.typicode.com/liuwenxuan013/demo/db")
             .then(response =>
             {
-                console.log(response);
+
                 this.setState({ movies: response.data.movies })
             });
     }

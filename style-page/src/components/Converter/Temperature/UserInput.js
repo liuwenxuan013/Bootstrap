@@ -22,7 +22,7 @@ class UserInput extends React.Component
         let scale = this.props.scale;
         return <div >
             {/* <div class="form-group"> */}
-            <label for={scaleNames[scale]}> </label>
+            <label htmlFor={scaleNames[scale]}> </label>
 
             <input
                 type="text"
