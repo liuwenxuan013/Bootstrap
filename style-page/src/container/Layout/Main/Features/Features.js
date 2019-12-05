@@ -25,7 +25,7 @@ function Features()
                         <a className="nav-link" href="#arts">Arts</a>
                     </li>
                     <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#movies" id="navbardrop" data-toggle="dropdown">
+                        <a className="nav-link dropdown-toggle" href="/features" id="navbardrop" data-toggle="dropdown">
                             Others</a>
                         <div className="dropdown-menu">
                             <a className="dropdown-item" href="#movies">Movies</a>
