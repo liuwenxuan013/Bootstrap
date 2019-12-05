@@ -1,24 +1,40 @@
 import React from 'react';
 import { InfoContext } from '../../../../components/Info/Info';
 
+import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
+import FaceIcon from '@material-ui/icons/Face';
+import DoneIcon from '@material-ui/icons/Done';
+
 import $ from 'jquery';
 import MyLinks from "../../../../components/MyLinks/MyLinks";
 import ContactLink from "../../../../components/MyLinks/ContactLink";
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-
+import pink from '@material-ui/core/colors/pink';
 import 'bootstrap';
 $('#addSupModal').modal('show');
 
+const primary = pink[300];
 
 class Profile extends React.Component
 {
+
+
     componentDidMount() {
         $(document).ready(function () {
-            $('.toast').toast('show')
+            $('.toast').toast('show');
+            $('[data-toggle="tooltip"]').tooltip();
         });
+
+
+
+
+
     };
 
+
     render(){
+
     return (
         <div >
 
@@ -33,34 +49,57 @@ class Profile extends React.Component
                                 <div className="row">
                                 <div  className="col-6" style={{width:"30%" }} >
 
-                                <h1>{context.info.name}</h1>
+                                <h1>{context.info.name}
+
+
+                                </h1>
+                                    <a href="./images/Laura Liu-Cover Letter.pdf"
+                                       download="Thank you"
+                                       data-toggle="tooltip"
+                                       title="Read me!"
+style={{color:'white',marginBottom:"20px"}}
+                                    >
+                                        <Chip
+                                            style={{marginBottom:"20px"}}
+                                            size="small"
+                                            icon={<FaceIcon />}
+                                            label="A letter for you"
+                                            clickable
+                                            color="primary"
+                                            onDelete={()=>{}}
+                                            deleteIcon={<CloudDownloadIcon
+                                                // style={{color:'white'}}
+                                            />}
+                                            variant="outlined"
+
+                                        /> </a>
 
                                 <h6>{context.info.title}  </h6>
                                 <ContactLink/>
                                 <p>Toronro,ON</p>
                                    <MyLinks  />
+
                                 <br/>
                             </div>
 
                             <div className="col-6" >
                                 <div className="toast" data-autohide="false" style={{backgroundColor:"lightBlue"}}>
                                     <div class="toast-header">
-                                        <strong className="mr-auto text-primary">Hi, Read me</strong>
-                                        <small className="text-muted">Read later</small>
+                                        <strong className="mr-auto text-primary">Hello</strong>
+                                        <small className="text-muted">Dismiss</small>
                                         <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
                                     </div>
                                     <div className="toast-body" >
-                                        <p>Please download my resume and help it
+                                        <p>Please download my   <a href="./images/Laura Liu-Resume.pdf" download="Laura Liu - Resume">
+                                            resume  <CloudDownloadIcon/>
+                                        </a>  and help it
                                         find a HR, I am looking forward to a Web
                                             developer job opportunity in Toronto...</p>
                                         <p>Thank you </p>
 
-                                        <a href="./images/Laura Liu-Resume.pdf" download="Laura Liu - Resume">
-                                            <CloudDownloadIcon/>
-                                        </a>
-
                                     </div>
                                 </div>
+
 
                                 </div>
                                 </div>

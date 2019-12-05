@@ -5,6 +5,14 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 
 
+import 'bootstrap';
+import $ from 'jquery';
+
+
+
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
 
 
 
@@ -25,7 +33,9 @@ function MyLinks(){
             </a>
 
             <a href="./images/Laura Liu-Resume.pdf" download="Laura Liu - Resume">
-                <AssignmentIndIcon  style={{marginRight:'10px'}}/>
+                <AssignmentIndIcon  style={{marginRight:'10px'}}
+                                    data-toggle="tooltip"
+                                    title="My Resume"/>
             </a>
 
             <a href="https://www.facebook.com/wenxuan.liu.laura"
