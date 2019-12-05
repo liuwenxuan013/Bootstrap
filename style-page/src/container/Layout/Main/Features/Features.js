@@ -8,7 +8,7 @@ import Movies from '../../../../components/Movies/Movies';
 import Music from '../../../../components/Music/Music';
 import Companies from '../../../../components/Companies/Companies';
 import {Link, Route, Switch} from 'react-router-dom';
-
+import 'bootstrap';
 
 function Features()
 {
@@ -57,10 +57,12 @@ function Features()
                 <hr />
                 <div id="accordionProgramming">
                     <div class="card bg-info" style={{margin: 0, border: "none", padding: 0}}>
-                        <a class="card-link" data-toggle="collapse s" href="#collapseProgramming"
-                           style={{ marginLeft:"44%",width:"120px"}}
-                        >
-                            <ToggleButton show="false"/>
+                        <a class="card-link"
+                           data-toggle="collapse"
+                           href="#collapseProgramming"
+                           style={{ marginLeft:"44%",width:"120px"}}>
+
+                            <ToggleButton />
                         </a>
                         <div id="collapseProgramming" class="collapse" data-parent="#accordionProgramming">
                             <div class="card-body" >
@@ -80,16 +82,16 @@ function Features()
 
 
 
-                <div id="accordion">
+                <div id="accordionAdventure">
                     <div class="card bg-warning" style={{ margin: 0, border: "none", padding: 0, }} >
                         {/* <div class="card-header" style={{ margin: 0, border: "none", padding: 0, }}> */}
-                        <a class="card-link" data-toggle="collapse" href="#collapseOne"
+                        <a class="card-link" data-toggle="collapse" href="#collapseAdventure"
                            style={{ marginLeft:"44%",width:"120px"}}>
                             < ToggleButton show='true' />
                         </a>
 
                         {/* </div> */}
-                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div id="collapseAdventure" class="collapse show" data-parent="#accordionAdventure">
                             <div class="card-body">
                                 <div class='row'>
                                     <div class="col-sm-3 bg-warning" >
@@ -124,8 +126,8 @@ function Features()
                     </div>
                 </div>
             </div>
-            <div id="section3" class="container-fluid bg-danger" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
-                <Route  path="/features#section3"  >  <h3>Arts</h3></Route>
+            <div id="arts" class="container-fluid bg-danger" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+                <Route  path="/features#arts"  >  <h3>Arts</h3></Route>
 
                 <blockquote className="blockquote" style={{padding:"15px 50px 0"}} >
                     <p>"  Art enables us to find ourselves and lose ourselves at the same time.  "</p>
@@ -139,13 +141,13 @@ function Features()
                 <br />
                 <p style={{padding:"0 50px "}} >
                     I think of art as the highest level of creativity. To me, it is one of the greatest sources of enjoyment</p>
-                <div id="accordion">
+                <div id="accordionArts">
                     <div class="card bg-danger" style={{ margin: 0, border: "none", padding: 0, }} >
-                        <a class="card-link" data-toggle="collapse" href="#collapseTwo"
+                        <a class="card-link" data-toggle="collapse" href="#collapseArts"
                            style={{ marginLeft:"44%",width:"120px"}}>
                             <ToggleButton show='true' />
                         </a>
-                        <div id="collapseTwo" class="collapse show" data-parent="#accordion">
+                        <div id="collapseArts" class="collapse show" data-parent="#accordionArts">
                             <div class="card-body">
                                 <ArtsCard />
                             </div>
@@ -153,7 +155,7 @@ function Features()
                     </div>
                 </div>
             </div>
-            <div id="section41" class="container-fluid bg-secondary" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+            <div id="movies" class="container-fluid bg-secondary" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
                 <h3>Movies</h3>
                 <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                 <p>"  The whole of life is just like watching a film. Only it's as though you always get in ten minutes after the big picture has started, and no-one will
@@ -161,13 +163,13 @@ function Features()
                     <footer className="blockquote-footer" style={{color:"lightGray"}}>Terry Pratchett</footer>
 
                 </blockquote>
-                <div id="accordion">
+                <div id="accordionMovies">
                     <div class="card bg-secondary" style={{ margin: 0, border: "none", padding: 0, }}>
-                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree"
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseMovies"
                            style={{ marginLeft:"44%",width:"120px"}}>
                             <ToggleButton  />
                         </a>
-                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div id="collapseMovies" class="collapse" data-parent="#accordionMovies">
                             <div class="card-body">
                                 <Movies />
                             </div>
@@ -176,19 +178,19 @@ function Features()
                 </div>
 
             </div>
-            <div id="section42" class="container-fluid bg-success" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+            <div id="music" class="container-fluid bg-success" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
                 <h3>Music</h3>
                 <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                     <p>“  After silence, that which comes nearest to expressing the inexpressible is music. ” </p>
                     <footer className="blockquote-footer" style={{color:"lightGray"}}>Aldous Huxley</footer>
                 </blockquote>
-            <div id="accordion">
+            <div id="accordionMusic">
                 <div className="card bg-success" style={{margin: 0, border: "none", padding: 0,}}>
-                    <a className="collapsed card-link" data-toggle="collapse" href="#collapseFour"
+                    <a className="collapsed card-link" data-toggle="collapse" href="#collapseMusic"
                        style={{ marginLeft:"44%",width:"120px"}}>
                         <ToggleButton  />
                     </a>
-                    <div id="collapseFour" className="collapse" data-parent="#accordion">
+                    <div id="collapseMusic" className="collapse" data-parent="#accordionMusic">
                         <div className="card-body">
                             <Music />
                         </div>

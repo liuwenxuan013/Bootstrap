@@ -20,7 +20,7 @@ class ToggleButton extends React.Component
                 onClick={this.clickHandler}>{text}
 
             </button>
-      
+
         );
     }
 }
