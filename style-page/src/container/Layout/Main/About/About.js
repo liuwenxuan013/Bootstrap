@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { InfoContext } from '../../../../components/Info/Info';
-import {Route }from "react-router-dom";
-import Features from "../Features/Features";
+
 function About()
 {
     return (<div   >
@@ -18,12 +17,12 @@ function About()
 
                            margin:"24px"
                         }}>
-                        <div class="card" >
-                            <img class="card-img-top" src="./images/idphoto.jpg" alt=" ID Card" style={{ width: "100%" }} />
-                            <div class="card-body">
-                                <h4 class="card-title">{context.info.name}</h4>
-                                <p class="card-text"> {context.info.title}</p>
-                                <Link to="/profile" class="card-text">See Profile</Link>
+                        <div className="card" >
+                            <img className="card-img-top" src="./images/idphoto.jpg" alt=" ID Card" style={{ width: "100%" }} />
+                            <div className="card-body">
+                                <h4 className="card-title">{context.info.name}</h4>
+                                <p className="card-text"> {context.info.title}</p>
+                                <Link to="/profile" className="card-text">See Profile</Link>
                             </div>
                         </div>
                     </div>
@@ -37,37 +36,32 @@ function About()
                         <h4>About me...</h4>
                         <p>{context.info.sub}</p>
                         <p>{context.info.sub2}</p>
-                        <div class="card" style={{ width: "250px ", height:"340px",float: "left" }}>
-                            <img class="card-img-top" src="./images/ys.jpg" alt=" ID Card" style={{ width: "100%" }} />
+                        <div className="card" style={{ width: "250px ", height:"340px",float: "left" }}>
+                            <img className="card-img-top" src="./images/ys.jpg" alt="Yellow Stone View" style={{ width: "100%" }} />
 
-                            <div class="card-body" style={{ float: "left" }} >
-                                <h4 class="card-title">Adventure</h4>
-                                <p class="card-text">More than a Developer</p>
+                            <div className="card-body" style={{ float: "left" }} >
+                                <h4 className="card-title">Adventure</h4>
+                                <p className="card-text">More than a Developer</p>
                                 <Link to={{
                                     pathname: '/features',
                                     hash: '#section2',
-                                }} class="card-link">Know more</Link>
-                                {/*<a href="/features#section3" class="card-link">Know more</a>*/}
+                                }} className="card-link">Know more</Link>
+                                {/*<a href="/features#section3" className="card-link">Know more</a>*/}
                             </div>
                         </div>
-                        <div class="card" style={{ width: "250px ", height:"340px",float: "right" ,
+                        <div className="card" style={{ width: "250px ", height:"340px",float: "right" ,
                             // float: "left",
                             marginLeft: "30px" }}>
-                            <img class="card-img-top" src="./images/nature2.jpg" alt=" ID Card" style={{ width: "100%" }} />
-                            <div class="card-body" >
-                                <h4 class="card-title">Arts</h4>
-                                <p class="card-text">More than a Developer</p>
-                                <Link to="/features#section3" class="card-link">Know more</Link>
+                            <img className="card-img-top" src="./images/nature2.jpg" alt="Nature Painting" style={{ width: "100%" }} />
+                            <div className="card-body" >
+                                <h4 className="card-title">Arts</h4>
+                                <p className="card-text">More than a Developer</p>
+                                <Link to="/features#section3" className="card-link">Know more</Link>
                                 {/*<Route path="/features#section3" component={Features} />*/}
-                                {/*<a href="#" class="card-link">Another link</a>*/}
+                                {/*<a href="#" className="card-link">Another link</a>*/}
                             </div>
                         </div>
-
-
                     </div>
-
-
-
                 </div>
 
             }
@@ -75,10 +69,6 @@ function About()
         </InfoContext.Consumer>
 
     </div>
-
-
-
-
 
     );
 }

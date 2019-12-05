@@ -17,7 +17,7 @@ function Dislike(props)
     return (
 
         <i
-            class="fas fa-heart "
+            className="fas fa-heart "
             style={{ color: "#d9d9d9" }}
             onClick={() =>
             {

@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import $ from 'jquery';
 import db from '../../db.json';
 class People extends React.Component
@@ -34,12 +34,12 @@ class People extends React.Component
     {
 
         return (
-            <div class="container ">
+            <div className="container ">
                 <h2>People</h2>
                 <p>Connect to people all around the World </p>
-                <input class="form-control" id="myInput" type="text" placeholder="Search.." />
+                <input className="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
-                <table class="table  table-sm table-responsive table-hover" >
+                <table className="table  table-sm table-responsive table-hover" >
                     <thead thead-light>
                     <tr>
                         {/*<th>Avatar</th>*/}

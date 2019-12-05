@@ -37,12 +37,12 @@ class Movies extends React.Component
 
 
 
-            <div class="container mt-8">
+            <div className="container mt-8">
                 <h4>My Favorite List</h4>
 
-                <input class="form-control" id="myInput" type="text" placeholder="Search.." />
+                <input className="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
-                <table class="table table-sm  table-hove" style={{textAlign:"center"}}>
+                <table className="table table-sm  table-hove" style={{textAlign:"center"}}>
                     <thead>
                         <tr>
                             <th>Title</th>

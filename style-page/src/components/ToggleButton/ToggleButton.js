@@ -15,7 +15,7 @@ class ToggleButton extends React.Component
         return (
 
             <button type="button"
-                class="btn text-light border-light"
+                className="btn text-light border-light"
                     style={{width:"110px"}}
                 onClick={this.clickHandler}>{text}
 

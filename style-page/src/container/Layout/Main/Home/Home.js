@@ -37,10 +37,10 @@ function Home()
                         <p>Imagination is more important than knowledge</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <img src="https://wallpapercave.com/wp/Fr0KPFO.jpg"
                          alt="Nature" width="1100" height="500" />
-                    <div class="carousel-caption">
+                    <div className="carousel-caption">
                         <h3>Adventure</h3>
                         <p> Life is short and the world is wide</p>
                     </div>
@@ -62,11 +62,11 @@ function Home()
                 </div>
 
             </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <a className="carousel-control-prev" href="#demo" data-slide="prev">
+                <span className="carousel-control-prev-icon"></span>
             </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
+            <a className="carousel-control-next" href="#demo" data-slide="next">
+                <span className="carousel-control-next-icon"></span>
             </a>
         </div>
 

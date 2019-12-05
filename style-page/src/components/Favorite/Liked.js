@@ -14,7 +14,7 @@ function Liked(props)
     return (
 
         <i
-            class="fas fa-heart "
+            className="fas fa-heart "
             style={{ color: "#ff4d4d" }}
             onClick={() =>
             {

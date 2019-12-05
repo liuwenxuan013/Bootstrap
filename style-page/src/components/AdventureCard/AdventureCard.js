@@ -5,7 +5,7 @@ class AdventureCard extends React.Component
 {
     state = {
         title: this.props.title,
-    }
+    };
     render()
     {
         let title = this.state.title;
@@ -48,24 +48,24 @@ class AdventureCard extends React.Component
 
                 return <div>
 
-                    <div id={title} class="carousel slide" data-ride="carousel">
-                        <ul class="carousel-indicators">
+                    <div id={title} className="carousel slide" data-ride="carousel">
+                        <ul className="carousel-indicators">
                             {album.forEach((e, index) =>
                             {
-                                console.log(index);
+
                                 return <li data-target={title}
                                     data-slide-to={index}
-                                    class="active"></li>
+                                    className="active"></li>
 
                             })}
                         </ul>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
                                 <img src={album[6].imgUrl}
                                     alt={album[6].title}
                                     width="250"
                                     height="200" />
-                                <div class="carousel-caption">
+                                <div className="carousel-caption">
                                     <h3>{album[6].title}</h3>
                                     <p>{album[6].desc}|{album.time}</p>
                                 </div>
@@ -73,12 +73,12 @@ class AdventureCard extends React.Component
                             {album.map((e, index) =>
                             {
 
-                                return <div key={e.imgUrl} class="carousel-item">
+                                return <div key={index} className="carousel-item">
                                     <img src={e.imgUrl}
                                         alt={e.title}
                                         width="250"
                                         height="200" />
-                                    <div class="carousel-caption" >
+                                    <div className="carousel-caption" >
                                         <h3>{e.title}</h3>
                                         <p>{e.desc}|{e.time}</p>
                                     </div>
@@ -87,11 +87,11 @@ class AdventureCard extends React.Component
                             })}
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href={'#' + title} data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
+                    <a className="carousel-control-prev" href={'#' + title} data-slide="prev">
+                        <span className="carousel-control-prev-icon"></span>
                     </a>
-                    <a class="carousel-control-next" href={'#' + title} data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
+                    <a className="carousel-control-next" href={'#' + title} data-slide="next">
+                        <span className="carousel-control-next-icon"></span>
                     </a>
                 </div>
 

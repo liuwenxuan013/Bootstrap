@@ -14,15 +14,15 @@ class ArtsCard extends React.Component
             {
 
 
-                return <div class="card-columns" >
+                return <div className="card-columns" >
                     {context.info.arts.map(e =>
                     {
                         return (
-                            <div class="card" style={{ width: "250px" }}>
-                                <img class="card-img-top" src={e.imgUrl} alt={e.desc} style={{ width: "100%" }} />
-                                <div class="card-body">
-                                    <h4 class="card-title">{e.title}</h4>
-                                    <p class="card-text">{e.desc}| @Laura |{e.time}</p>
+                            <div key={e.title} className="card" style={{ width: "250px" }}>
+                                <img className="card-img-top" src={e.imgUrl} alt={e.desc} style={{ width: "100%" }} />
+                                <div className="card-body">
+                                    <h4 className="card-title">{e.title}</h4>
+                                    <p className="card-text">{e.desc}| @Laura |{e.time}</p>
 
                                 </div>
 

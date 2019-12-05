@@ -7,13 +7,11 @@ function Layout()
     return (
         <div style={{backgroundColor:"lightGrey"}}>
 
-
-        <div class="container" >
+        <div className="container" >
 
             <Nav />
             <Main />
             <Footer/>
-
         </div>
         </div>
 

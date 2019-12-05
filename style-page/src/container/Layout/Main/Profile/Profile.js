@@ -18,8 +18,6 @@ class Profile extends React.Component
         });
     };
 
-
-
     render(){
     return (
         <div >
@@ -45,13 +43,13 @@ class Profile extends React.Component
                             </div>
 
                             <div className="col-6" >
-                                <div class="toast" data-autohide="false" style={{backgroundColor:"lightBlue"}}>
+                                <div className="toast" data-autohide="false" style={{backgroundColor:"lightBlue"}}>
                                     <div class="toast-header">
-                                        <strong class="mr-auto text-primary">Hi, Read me</strong>
-                                        <small class="text-muted">Read later</small>
+                                        <strong className="mr-auto text-primary">Hi, Read me</strong>
+                                        <small className="text-muted">Read later</small>
                                         <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
                                     </div>
-                                    <div class="toast-body" >
+                                    <div className="toast-body" >
                                         <p>Please download my resume and help it
                                         find a HR, I am looking forward to a Web
                                             developer job opportunity in Toronto...</p>
@@ -94,7 +92,7 @@ class Profile extends React.Component
                                 {context.info.workExperience.map((e,index) => {
                                     return (
                                         <div key={index}>
-                                            <h5 class="bg-info">{e.company}</h5>
+                                            <h5 className="bg-info">{e.company}</h5>
                                             <h6>{e.jobTitle}</h6>
                                             <p>{e.start} To {e.end}</p>
 
