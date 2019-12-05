@@ -80,15 +80,12 @@ function Features()
                     <p>Life is short and the world is wide...</p>
                 </blockquote>
 
-
-
                 <div id="accordionAdventure">
                     <div className="card bg-warning" style={{ margin: 0, border: "none", padding: 0, }} >
                         {/* <div className="card-header" style={{ margin: 0, border: "none", padding: 0, }}> */}
                         <a className="card-link" data-toggle="collapse" href="#collapseAdventure"
                            style={{ marginLeft:"44%",width:"120px"}}>
                             < ToggleButton show='true' />
-
                         </a>
 
                         {/* </div> */}

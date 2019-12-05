@@ -65,21 +65,21 @@ class AdventureCard extends React.Component
                                     alt={album[6].title}
                                     width="250"
                                     height="200" />
-                                <div className="carousel-caption">
-                                    <h3>{album[6].title}</h3>
+                                <div className="carousel-caption" style={{color:'#00ffff'}}>
+                                    <h5>{album[6].title}</h5>
                                     <p>{album[6].desc}|{album.time}</p>
                                 </div>
                             </div>
                             {album.map((e, index) =>
                             {
 
-                                return <div key={index} className="carousel-item">
+                                return <div key={index} className="carousel-item" >
                                     <img src={e.imgUrl}
                                         alt={e.title}
                                         width="250"
                                         height="200" />
-                                    <div className="carousel-caption" >
-                                        <h3>{e.title}</h3>
+                                    <div className="carousel-caption" style={{color:'#00ffff'}}>
+                                        <h5>{e.title}</h5>
                                         <p>{e.desc}|{e.time}</p>
                                     </div>
                                 </div>
