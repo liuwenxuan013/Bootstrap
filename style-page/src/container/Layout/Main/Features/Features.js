@@ -12,9 +12,6 @@ import 'bootstrap';
 function Features()
 {
     return (<div>
-
-
-
         <div data-spy="scroll" data-target=".navbar" data-offset="50" style={{ margin: 0 }}>
             <nav className="navbar navbar-expand-sm justify-content-center bg-info navbar-light ">
                 <ul className="navbar-nav">
@@ -39,7 +36,7 @@ function Features()
             </nav>
 
             <div id="programming" className="container-fluid bg-info" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
-                <h3  >Programming</h3>
+                <h3> Programming </h3>
                 <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                 <p>A Web Developer not only plays a crucial role in Web design, development,
                     testing, operation, and support, but also has a great influence on marketing
@@ -49,7 +46,7 @@ function Features()
                     resource in accomplishing these goals.</p>
                 </blockquote>
                 <hr />
-                <h5 style={{textAlign:"center", color:"#a5e7f3"}}>~ Play with Widgets ~</h5>
+                <h5 style={{textAlign:"center", color:"#a5e7f3"}}> ~ Play with Widgets ~ </h5>
                 <Clock />
                 <hr />
                 <Converter />
@@ -60,8 +57,7 @@ function Features()
                            data-toggle="collapse"
                            href="#collapseProgramming"
                            style={{ marginLeft:"44%",width:"120px"}}>
-
-                            <ToggleButton  />
+                            <ToggleButton />
                         </a>
                         <div id="collapseProgramming" className="collapse" data-parent="#accordionProgramming">
                             <div className="card-body" >
@@ -70,7 +66,6 @@ function Features()
                         </div>
                     </div>
                 </div>
-
             </div>
             <div id="adventure" className="container-fluid bg-warning" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
                 <h3>Adventure</h3>
@@ -86,8 +81,6 @@ function Features()
                            style={{ marginLeft:"44%",width:"120px"}}>
                             < ToggleButton show='true' />
                         </a>
-
-                        {/* </div> */}
                         <div id="collapseAdventure" className="collapse show" data-parent="#accordionAdventure">
                             <div className="card-body">
                                 <div className='row'>
