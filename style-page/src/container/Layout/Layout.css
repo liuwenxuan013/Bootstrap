@@ -8,7 +8,12 @@
 }
 
 
-
+.a {
+    color:royalblue;
+}
+.a: hover{
+    color:cadetblue;
+}
 
 .menu {
     float:left;
@@ -21,7 +26,7 @@
     padding:50px;
     display: block;
     width: 100%;
-    color:black;
+    color:royalblue;
 
 }
 

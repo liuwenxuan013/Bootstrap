@@ -92,7 +92,9 @@ img{
     text-align:center;
     padding-right:26%;
 }
-
+.Link{
+    color:royalblue;
+}
 @media only screen and (max-width:620px) {
     /* For mobile phones: */
     .sub-left,.sub-right{
