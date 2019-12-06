@@ -2,11 +2,12 @@ import React from 'react';
 // import axios from 'axios';
  import db from '../../db.json';
 import $ from 'jquery';
+import '../../container/Layout/Main/Main.css';
 class Companies extends React.Component
 {
     state = {
 
-        companies:[]}
+        companies:[]};
 
     componentDidMount()
     {
@@ -37,29 +38,24 @@ class Companies extends React.Component
     {
 
         return (
-            <div className="container ">
-                <h4 style={{textAlign:"center"}}>Companies</h4>
+            <div className="s-tb">
+                <h4 >Companies</h4>
                 <p style={{textAlign:"center"}} >Find your job opportunity </p>
                 <input className="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
-                <table className="table table-sm table-responsive table-hover" style= {{textAlign:"center"}}>
+                <table className="table table-sm table-responsive table-hover" >
                     <thead>
                     <tr>
-
                         <th>Company</th>
                         <th>Website</th>
                         <th>Email</th>
                         <th>Address</th>
                         <th>City</th>
                         <th>Zip Code</th>
-
-
                     </tr>
                     </thead>
-                    <tbody id="myTable" style={{fontSize:"14px"}}>
+                    <tbody id="myTable" >
                     {db.companies.map(m =>{
-
-
                         return <tr key={m.id} >
                             <td>{m.name}</td>
                             <td>{m.website}</td>
@@ -67,8 +63,6 @@ class Companies extends React.Component
                             <td>{m.address}</td>
                             <td>{m.city}</td>
                             <td>{m.zipCode}</td>
-
-
                         </tr>
                     })}
                     </tbody>

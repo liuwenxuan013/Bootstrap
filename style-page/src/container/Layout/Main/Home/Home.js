@@ -1,12 +1,12 @@
 import React from 'react';
 import MyLinks from "../../../../components/MyLinks/MyLinks";
 import OtherLinks from "../../../../components/MyLinks/OtherLinks";
-
+import '../../Layout.css';
 
 function Home()
 {
-    return (<div>
-        <div id="demo" className="carousel slide" data-ride="carousel" style={{marginTop:"58px"}}>
+    return (<div >
+        <div id="demo" className="carousel slide" data-ride="carousel" >
             <ul className="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" className="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>

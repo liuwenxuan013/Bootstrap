@@ -1,15 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../container/Layout/Layout.css';
+
 function Nav()
 {
     return (
+        <div className="menu ">
 
-        <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 
-            <Link className="navbar-brand" to="/">
-                <img src="./images/vision.jpg" alt="logo" className="rounded-circle" style={{ width: "40px" }} />
-            </Link>
+<nav className="navbar ">
             <ul className="navbar-nav">
+                <li className="nav-item" style={{padding:"35px"}}>
+
+                        <img src="./images/vision.jpg" alt="logo" className="rounded-circle" style={{ width: "40px" }} />
+
+                </li>
+
+
                 <li className="nav-item">
                     <Link className="nav-link" to="/">Home</Link>
                 </li>
@@ -22,24 +29,13 @@ function Nav()
                 <li className="nav-item">
                     <Link className="nav-link" to="/profile">Profile</Link>
                 </li>
-                {/* <li className="nav-item dropdown">
-                    <Link className="nav-link dropdown-toggle" to="/features" data-toggle="dropdown">
-                        Who am I</Link>
-                    <div className="dropdown-menu">
-                        <Link className="dropdown-item" to="/features">Programmer</Link>
-                        <Link className="dropdown-item" to="/features">Arts</Link>
-                        <Link className="dropdown-item" to="/features">Music</Link>
-                    </div>
 
-
-
-                </li> */}
                 <li className="nav-item">
                     <Link className="nav-link" to="/contact">Contact me</Link>
                 </li>
             </ul>
-        </nav >
-
+</nav>
+        </div>
 
     );
 }

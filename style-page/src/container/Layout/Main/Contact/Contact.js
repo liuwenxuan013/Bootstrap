@@ -1,20 +1,26 @@
 import React from 'react';
 import MyLinks from '../../../../components/MyLinks/MyLinks';
 import ContactLink from "../../../../components/MyLinks/ContactLink";
+import '../Main.css';
 class Contact extends React.Component {
     render() {
-        return <div style={{paddingTop:'30% ',textAlign:"center"}}>
+        return <div className="contact">
+            <div className="center">
             <ContactLink/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+
             <MyLinks/>
+
         </div>
     }
 }

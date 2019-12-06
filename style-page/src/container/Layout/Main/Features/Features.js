@@ -8,12 +8,15 @@ import Movies from '../../../../components/Movies/Movies';
 import Music from '../../../../components/Music/Music';
 import Companies from '../../../../components/Companies/Companies';
 import 'bootstrap';
+import "../Main.css";
+
+
 
 function Features()
 {
-    return (<div>
-        <div data-spy="scroll" data-target=".navbar" data-offset="50" style={{ margin: 0 }}>
-            <nav className="navbar navbar-expand-sm justify-content-center bg-info navbar-light ">
+    return (<div >
+        <div className="feature-header">
+            <nav className="navbar navbar-expand-sm justify-content-center  navbar-light  ">
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <a className="nav-link" href="#programming">Programming</a>
@@ -34,8 +37,10 @@ function Features()
                     </li>
                 </ul>
             </nav>
+        </div>
+            <div className="feature">
 
-            <div id="programming" className="container-fluid bg-info" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+            <div id="programming" className="single-feature bg-info" >
                 <h3> Programming </h3>
                 <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                 <p>A Web Developer not only plays a crucial role in Web design, development,
@@ -52,11 +57,10 @@ function Features()
                 <Converter />
                 <hr />
                 <div id="accordionProgramming">
-                    <div className="card bg-info" style={{margin: 0, border: "none", padding: 0}}>
+                    <div className="card bg-info" style={{textAlign:"center"}}>
                         <a className="card-link"
                            data-toggle="collapse"
-                           href="#collapseProgramming"
-                           style={{ marginLeft:"44%",width:"120px"}}>
+                           href="#collapseProgramming">
                             <ToggleButton />
                         </a>
                         <div id="collapseProgramming" className="collapse" data-parent="#accordionProgramming">
@@ -67,7 +71,7 @@ function Features()
                     </div>
                 </div>
             </div>
-            <div id="adventure" className="container-fluid bg-warning" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+            <div id="adventure" className="single-feature bg-warning" >
                 <h3>Adventure</h3>
                 <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                     <p>Adventure isn’t hanging off a rope on the side of a mountain or living among lions. Adventure is an attitude to experience everyday things.</p>
@@ -75,10 +79,8 @@ function Features()
                 </blockquote>
 
                 <div id="accordionAdventure">
-                    <div className="card bg-warning" style={{ margin: 0, border: "none", padding: 0, }} >
-                        {/* <div className="card-header" style={{ margin: 0, border: "none", padding: 0, }}> */}
-                        <a className="card-link" data-toggle="collapse" href="#collapseAdventure"
-                           style={{ marginLeft:"44%",width:"120px"}}>
+                    <div className="card bg-warning" style={{textAlign:"center"}} >
+                        <a className="card-link" data-toggle="collapse" href="#collapseAdventure">
                             < ToggleButton show='true' />
                         </a>
                         <div id="collapseAdventure" className="collapse show" data-parent="#accordionAdventure">
@@ -116,9 +118,8 @@ function Features()
                     </div>
                 </div>
             </div>
-            <div id="arts" className="container-fluid bg-danger" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+            <div id="arts" className="single-feature bg-danger" >
               <h3>Arts</h3>
-
                 <blockquote className="blockquote" style={{padding:"15px 50px 0"}} >
                     <p>"  Art enables us to find ourselves and lose ourselves at the same time.  "</p>
                     <footer className="blockquote-footer" style={{color:"#f5bcc4"}}>Thomas Merton</footer>
@@ -132,20 +133,19 @@ function Features()
                 <p style={{padding:"0 50px "}} >
                     I think of art as the highest level of creativity. To me, it is one of the greatest sources of enjoyment</p>
                 <div id="accordionArts">
-                    <div className="card bg-danger" style={{ margin: 0, border: "none", padding: 0, }} >
-                        <a className="card-link" data-toggle="collapse" href="#collapseArts"
-                           style={{ marginLeft:"44%",width:"120px"}}>
+                    <div className="card bg-danger" style={{textAlign:"center"}}  >
+                        <a className="card-link" data-toggle="collapse" href="#collapseArts">
                             <ToggleButton show='true' />
                         </a>
                         <div id="collapseArts" className="collapse show" data-parent="#accordionArts">
-                            <div className="card-body">
+                            <div className="card-body s-card">
                                 <ArtsCard />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="movies" className="container-fluid bg-secondary" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+            <div id="movies" className="single-feature bg-secondary" >
                 <h3>Movies</h3>
                 <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                 <p>"  The whole of life is just like watching a film. Only it's as though you always get in ten minutes after the big picture has started, and no-one will
@@ -154,9 +154,8 @@ function Features()
 
                 </blockquote>
                 <div id="accordionMovies">
-                    <div className="card bg-secondary" style={{ margin: 0, border: "none", padding: 0, }}>
-                        <a className="collapsed card-link" data-toggle="collapse" href="#collapseMovies"
-                           style={{ marginLeft:"44%",width:"120px"}}>
+                    <div className="card bg-secondary" style={{textAlign:"center"}} >
+                        <a className="collapsed card-link" data-toggle="collapse" href="#collapseMovies">
                             <ToggleButton />
 
                         </a>
@@ -169,18 +168,16 @@ function Features()
                 </div>
 
             </div>
-            <div id="music" className="container-fluid bg-success" style={{ paddingTop: "70px", paddingBottom: "70px", marginBottom: "20px" }}>
+            <div id="music" className="single-feature bg-success" >
                 <h3>Music</h3>
                 <blockquote className="blockquote" style={{padding:"15px 50px"}} >
                     <p>“  After silence, that which comes nearest to expressing the inexpressible is music. ” </p>
                     <footer className="blockquote-footer" style={{color:"lightGray"}}>Aldous Huxley</footer>
                 </blockquote>
             <div id="accordionMusic">
-                <div className="card bg-success" style={{margin: 0, border: "none", padding: 0,}}>
-                    <a className="collapsed card-link" data-toggle="collapse" href="#collapseMusic"
-                       style={{ marginLeft:"44%",width:"120px"}}>
+                <div className="card bg-success" style={{textAlign:"center"}} >
+                    <a className="collapsed card-link" data-toggle="collapse" href="#collapseMusic">
                         <ToggleButton />
-
                     </a>
                     <div id="collapseMusic" className="collapse" data-parent="#accordionMusic">
                         <div className="card-body">
@@ -190,9 +187,12 @@ function Features()
                 </div>
             </div>
         </div >
+
         </div>
         </div>
 
     );
 }
+
+
 export default Features;

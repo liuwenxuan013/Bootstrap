@@ -2,6 +2,7 @@
 import React from 'react';
 import axios from 'axios';
 import $ from 'jquery';
+import '../../container/Layout/Main/Main.css';
 class  Music extends React.Component
 {
     state = {
@@ -34,16 +35,11 @@ class  Music extends React.Component
     {
 
         return (
-
-
-
-
-            <div >
+            <div className="s-tb">
                 <h4>Playlist</h4>
-
                 <input className="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
-                <table className="table table-sm table-hove" style ={{textAlign:"center"}}>
+                <table className="table table-sm table-hove" >
                     <thead>
                         <tr>
                             <th>Title</th>

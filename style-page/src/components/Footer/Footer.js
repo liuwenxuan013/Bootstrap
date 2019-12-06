@@ -1,17 +1,18 @@
 
 import React  from 'react';
+import '../../container/Layout/Layout.css';
 function Footer()
 {
 
 
     return (
 
-        <div className=" text-center" style={{padding:"10px",marginBottom:0,color:'gray'}}>
+        <div className="main footer" >
             <hr/>
-                <p>@Wenxuan</p>
+                <p> © copyright Laura</p>
 
+            </div>
 
-        </div>
 
     );
 

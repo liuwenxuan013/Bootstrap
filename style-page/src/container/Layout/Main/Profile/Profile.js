@@ -8,7 +8,9 @@ import ContactLink from "../../../../components/MyLinks/ContactLink";
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import 'bootstrap';
 import OtherLinks from "../../../../components/MyLinks/OtherLinks";
+import '../Main.css';
 $('#addSupModal').modal('show');
+
 class Profile extends React.Component
 {
 
@@ -18,11 +20,6 @@ class Profile extends React.Component
             $('.toast').toast('show');
             $('[data-toggle="tooltip"]').tooltip();
         });
-
-
-
-
-
     };
 
 
@@ -30,7 +27,6 @@ class Profile extends React.Component
 
     return (
         <div >
-
             <InfoContext.Consumer>
                 {(context) => {
 
@@ -39,7 +35,7 @@ class Profile extends React.Component
                             <div id="accordionInfo" >
                                 <div className="card " style={{padding:"40px"}}>
                                     <div className="row">
-                                    <div  className="col-6" style={{width:"30%" }} >
+                                    <div  className="row-left"  >
                                     <h1>{context.info.name}
                                     </h1>
                                         <a href="./images/Laura Liu-Cover Letter.pdf"
@@ -59,17 +55,19 @@ class Profile extends React.Component
                                                 variant="outlined"/>
                                         </a>
                                     <h6> {context.info.title}  </h6>
+                                        <div style={{fontSize:"12px"}}>
                                     <ContactLink/>
                                     <p>Toronro,ON</p>
+                                        </div>
                                         <div className="row" >
-                                            <div  className="col-sm-5" style={{marginRight:0,paddingRight:0,textAlign:"center"}}>
+                                            <div  className="row-left " >
                                                 <MyLinks />
-                                            </div>|
-                                            <div className="col-sm-5" > <OtherLinks /> </div>
+                                            </div>
+                                            <div className="row-right" > <OtherLinks /> </div>
                                         </div>
                                     <br/>
                                 </div>
-                                <div className="col-6" >
+                                <div className="row-right" >
                                     <div className="toast" data-autohide="false" style={{backgroundColor:"lightBlue"}}>
                                         <div className="toast-header">
                                             <strong className="mr-auto text-primary">Hello</strong>
@@ -89,8 +87,10 @@ class Profile extends React.Component
                                     </div>
                                 </div>
                             </div>
-                            <div id="accordionSummary" >
-                                    <div className="card" style={{padding:"40px"}}>
+                            <div className="s-pro">
+
+                            <div  id="accordionSummary" >
+                                    <div className="card s-pro" >
                                         <a className="card-link" data-toggle="collapse" href="#collapseSummary">
                                             <h4 >EXECUTIVE SUMMARY</h4>
                                         </a>
@@ -101,9 +101,9 @@ class Profile extends React.Component
                             </div>
 
                             <div id="accordionExperience" >
-                                    <div className="card" style={{padding:"40px"}}>
+                                    <div className="card s-pro" >
                                         <a className="card-link " data-toggle="collapse" href="#collapseExperience" >
-                                            <h4 style={{ padding:"20px 0"}}>PROFESSIONAL EXPERIENCE</h4>
+                                            <h4 >PROFESSIONAL EXPERIENCE</h4>
                                         </a>
                                          {context.info.workExperience.map((e,index) => {
                                                 return (
@@ -127,20 +127,20 @@ class Profile extends React.Component
                                 </div>
                             </div>
                             <div id="accordionEducation" >
-                                <div className="card" style={{padding:"40px"}}>
+                                <div className="card s-pro" >
                                     <a className="card-link" data-toggle="collapse" href="#collapseEducation">
                                         <h4 >EDUCATION</h4>
                                     </a>
                                     {context.info.education.map(e => {
                                         return (
-                                            <div style={{ padding:"20px 0"}} key={e.school}>
+                                            <div  key={e.school}>
                                                     <h5 className="bg-info">{e.school}</h5>
                                                     <h6>{e.degree} - {e.major}</h6>
                                                     <p>{e.start} To {e.end} | {e.city},{e.country}</p>
                                                     <div id="collapseEducation" className="collapse show" data-parent="#accordionEducation">
-                                                        <div className="card-body">
+                                                        <div className="card-body"  >
                                                             {e.awards.map((a,index)=>{
-                                                                return  <div key={index} className="card" style={{width: " 200px", height:"150px", float: "left"}}>
+                                                                return  <div key={index} className="card" style={{width: " 180px", height:"150px", float: "left"}}>
                                                                                 <img className="card-img-top" src={a.imgUrl}
                                                                                      alt={a.title} style={{width: "100%" ,height:"83%"}}/>
                                                                                 <div className="card-body" style={{margin:0,padding:0,float: "left"}}>
@@ -157,7 +157,7 @@ class Profile extends React.Component
                             </div>
 
                             <div id="accordionSkills" >
-                                    <div className="card" style={{ padding:"40px"}}>
+                                    <div className="card s-pro" >
                                         <a className="card-link" data-toggle="collapse" href="#collapseSkills">
                                             <h4  >SKILLS</h4>
                                         </a>
@@ -170,7 +170,7 @@ class Profile extends React.Component
                                     </div>
                             </div>
                             <div id="accordionCertificate" >
-                                    <div className="card" style={{ padding:"40px"}}>
+                                    <div className="card s-pro" >
                                         <a className="card-link" data-toggle="collapse" href="#collapseCertificate">
                                             <h4  >CERTIFICATE</h4>
                                         </a>
@@ -190,6 +190,7 @@ class Profile extends React.Component
                                             </div>
                                         </div>
                                     </div>
+                            </div>
                             </div>
                     </div>)
                 }

@@ -2,6 +2,7 @@
 import React from 'react';
 import axios from 'axios';
 import $ from 'jquery';
+import '../../container/Layout/Main/Main.css';
 class Movies extends React.Component
 {
     state = {
@@ -32,18 +33,13 @@ class Movies extends React.Component
     }
     render()
     {
-
         return (
-
-
-
-
-            <div className="container mt-8">
+            <div className="s-tb">
                 <h4>My Favorite List</h4>
 
                 <input className="form-control" id="myInput" type="text" placeholder="Search.." />
                 <br />
-                <table className="table table-sm  table-hove" style={{textAlign:"center"}}>
+                <table className="table table-sm  table-hove" >
                     <thead>
                         <tr>
                             <th>Title</th>
@@ -54,7 +50,6 @@ class Movies extends React.Component
                             <th>Duration</th>
                             <th>Year</th>
                             <th>Rating</th>
-
                         </tr>
                     </thead>
                     <tbody id="myTable">
@@ -71,7 +66,6 @@ class Movies extends React.Component
                                 <td>{m.duration}</td>
                                 <td>{m.time}</td>
                                 <td>{m.rating}</td>
-
                             </tr>
                         })}
                     </tbody>
