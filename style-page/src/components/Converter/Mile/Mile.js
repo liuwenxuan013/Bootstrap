@@ -62,7 +62,7 @@ class Mile extends React.Component
             //onInputChange={(event)=>this.fahrenheitChangeHandler(event.target.value)}
             />
             <button type="reset"
-                    className="btn text-light border-light"
+                    className="btn text-dark border-secondary"
                     style={{padding:"0 10px",margin:"10px 0"}}
                 onClick={this.clearHandler}
 

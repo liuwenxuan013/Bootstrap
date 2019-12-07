@@ -121,7 +121,9 @@ img{
 }
 
 
-
+.artsCard{
+    font-family: 'Darker Grotesque', sans-serif;
+font-size:small;}
 .single-feature{
     padding:20px;
 color:black;

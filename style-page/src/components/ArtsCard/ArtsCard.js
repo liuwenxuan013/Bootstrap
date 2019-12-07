@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoContext } from '../Info/Info';
 import Favorite from '../../components/Favorite/Favorite';
-
+import '../../container/Layout/Main/Main.css';
 class ArtsCard extends React.Component
 {
 
@@ -14,7 +14,7 @@ class ArtsCard extends React.Component
             {
 
 
-                return <div className="card-columns" >
+                return <div className="card-columns artsCard" >
                     {context.info.arts.map(e =>
                     {
                         return (

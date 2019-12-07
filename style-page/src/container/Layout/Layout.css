@@ -24,14 +24,15 @@ a:hover{
 }
 .menu  ul{
     background-color:whitesmoke ;
-    padding:50px;
+    padding:50px 20px;
     display: block;
     width: 100%;
     color:royalblue;
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: larger;
+    font-size: large;
 
 }
+
 
 .main {
     float:left;

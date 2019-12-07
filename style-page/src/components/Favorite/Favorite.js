@@ -5,7 +5,7 @@ import Dislike from "./Dislike";
 class  Favorite extends React.Component
 {
     state={
-        count:Math.round(Math.random() * 10),
+        count:Math.floor(Math.random() * 100),
         isLike:false};
 
 

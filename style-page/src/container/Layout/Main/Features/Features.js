@@ -127,12 +127,12 @@ function Features()
             </div>
             <div id="arts" className="single-feature " >
               <h3>Arts</h3>
-                <blockquote className="blockquote"  >
-                    <p>"  Art enables us to find ourselves and lose ourselves at the same time.  "</p>
+                <blockquote className="blockquote" style={{fontFamily:"'Alex Brush', cursive"}} >
+                    <p >"Art enables us to find ourselves and lose ourselves at the same time."</p>
                     <footer className="blockquote-footer" >Thomas Merton</footer>
                 </blockquote>
-                <blockquote className="blockquote"  >
-                    <p>"  To practice any art, no matter how well or how badly, is a way to make your soul grow, for heaven’s sake. So do it.  "</p>
+                <blockquote className="blockquote" style={{fontFamily:"'Alex Brush', cursive"}} >
+                    <p >"To practice any art, no matter how well or how badly, is a way to make your soul grow, for heaven’s sake. So do it."</p>
                     <footer className="blockquote-footer">Kurt Vonnegut</footer>
                 </blockquote>
 
@@ -154,9 +154,10 @@ function Features()
             </div>
             <div id="movies" className="single-feature " >
                 <h3>Movies</h3>
-                <blockquote className="blockquote"  >
-                <p>"  The whole of life is just like watching a film. Only it's as though you always get in ten minutes after the big picture has started, and no-one will
-                    tell you the plot, so you have to work it out all yourself from the clues.  " </p>
+                <blockquote className="blockquote" style={{fontFamily:"'Alex Brush', cursive"}} >
+                <p style={{fontFamily:"Lovers+Quarre"}}>"The whole of life is just like watching
+                    a film. Only it's as though you always get in ten minutes after the big picture has started, and no-one will
+                    tell you the plot, so you have to work it out all yourself from the clues." </p>
                     <footer className="blockquote-footer" >Terry Pratchett</footer>
 
                 </blockquote>
@@ -177,8 +178,8 @@ function Features()
             </div>
             <div id="music" className="single-feature" >
                 <h3>Music</h3>
-                <blockquote className="blockquote " style={{padding:"15px 50px"}} >
-                    <p>“  After silence, that which comes nearest to expressing the inexpressible is music. ” </p>
+                <blockquote className="blockquote " style={{fontFamily:"'Alex Brush', cursive"}}>
+                    <p style={{fontFamily:"Lovers+Quarre"}}>“After silence, that which comes nearest to expressing the inexpressible is music.” </p>
                     <footer className="blockquote-footer" >Aldous Huxley</footer>
                 </blockquote>
             <div id="accordionMusic">
