@@ -9,7 +9,9 @@ function Header()
 
         <div className="header" >
 
-            <div style={{backgroundImage: "url('https://images.unsplash.com/photo-1495926086070-21865ce21e2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')",
+            <div style={{
+                backgroundImage: "url('https://images.unsplash.com/photo-1495926086070-21865ce21e2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')",
+                width:"100%",
                 padding:"80px",
                 color:"white"
 

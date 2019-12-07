@@ -48,7 +48,9 @@ class AdventureCard extends React.Component
 
                 return <div>
 
-                    <div id={title} className="carousel slide" data-ride="carousel">
+                    <div id={title} className="carousel slide" data-ride="carousel"
+
+                    >
                         <ul className="carousel-indicators">
                             {album.forEach((e, index) =>
                             {
@@ -65,7 +67,7 @@ class AdventureCard extends React.Component
                                     alt={album[6].title}
                                     width="250"
                                     height="200" />
-                                <div className="carousel-caption" style={{color:'#00ffff'}}>
+                                <div className="carousel-caption" style={{color:'white',fontWeight:"bold"}}>
                                     <h5>{album[6].title}</h5>
                                     <p>{album[6].desc}|{album.time}</p>
                                 </div>
@@ -78,7 +80,7 @@ class AdventureCard extends React.Component
                                         alt={e.title}
                                         width="250"
                                         height="200" />
-                                    <div className="carousel-caption" style={{color:'#00ffff'}}>
+                                    <div className="carousel-caption" style={{color:'white',fontWeight:"bold"}}>
                                         <h5>{e.title}</h5>
                                         <p>{e.desc}|{e.time}</p>
                                     </div>

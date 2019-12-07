@@ -12,13 +12,13 @@ function ResultText(props)
     //     setText("Good Driving!");
     // }
 
-        return <p style={{ color: 'white' }}>Good Driving! </p>
+        return <p style={{ color: 'royalblue' }}>Good Driving! </p>
     if (props.km >= 120)
         return <p style={{ color: '#ff8080' }}>Over Speed! </p>
     // { setStyle({color:"#ff8080"});
     // setText("Over Speed!");}
 
-    return <p style={{textAlign:"center", color:"#a5e7f3"}}> <small>~ Play to see ~  </small>  </p>
+    return <p style={{textAlign:"center", color:"royalblue"}}> <small>~ Play to see ~  </small>  </p>
 }
 
 export default ResultText;

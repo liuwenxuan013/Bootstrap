@@ -2,7 +2,7 @@ import React from 'react';
 
 import Mile from './Mile/Mile';
 import Temperature from './Temperature/Temperature';
-
+import '../../container/Layout/Main/Main.css';
 
 class Tools extends React.Component
 {
@@ -23,11 +23,10 @@ class Tools extends React.Component
 
 
 
-                <button className="text-warning bg-info" style={{border:"none"}}
-                    onClick={this.milesHandler}>
-                    Miles
+                <button className="converterBtn"
+                    onClick={this.milesHandler}>Mile
                 </button>|
-                <button className="text-warning bg-info" style={{border:"none"}}
+                <button className="converterBtn"
                     onClick={this.temperatureHandler}
                 >Temperature
                 </button>

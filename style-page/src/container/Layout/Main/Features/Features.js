@@ -40,9 +40,9 @@ function Features()
         </div>
             <div className="feature">
 
-            <div id="programming" className="single-feature bg-info" >
+            <div id="programming" className="single-feature o" >
                 <h3> Programming </h3>
-                <blockquote className="blockquote" style={{padding:"15px 50px"}} >
+                <blockquote className="blockquote"  >
                 <p>A Web Developer not only plays a crucial role in Web design, development,
                     testing, operation, and support, but also has a great influence on marketing
                      and users retention. The deliverables created help clients be more efficient
@@ -51,13 +51,13 @@ function Features()
                     resource in accomplishing these goals.</p>
                 </blockquote>
                 <hr />
-                <h5 style={{textAlign:"center", color:"#a5e7f3"}}> ~ Play with Widgets ~ </h5>
+                <h5 style={{textAlign:"center", color:"royalBlue"}}> ~ Play with Widgets ~ </h5>
                 <Clock />
                 <hr />
                 <Converter />
                 <hr />
                 <div id="accordionProgramming">
-                    <div className="card bg-info" style={{textAlign:"center"}}>
+                    <div className="card  border-0" style={{textAlign:"center"}}>
                         <a className="card-link"
                            data-toggle="collapse"
                            href="#collapseProgramming">
@@ -71,45 +71,52 @@ function Features()
                     </div>
                 </div>
             </div>
-            <div id="adventure" className="single-feature bg-warning" >
+            <div id="adventure" className="single-feature" >
                 <h3>Adventure</h3>
-                <blockquote className="blockquote" style={{padding:"15px 50px"}} >
+                <blockquote className="blockquote"  >
                     <p>Adventure isn’t hanging off a rope on the side of a mountain or living among lions. Adventure is an attitude to experience everyday things.</p>
                     <p>Life is short and the world is wide...</p>
                 </blockquote>
 
                 <div id="accordionAdventure">
-                    <div className="card bg-warning" style={{textAlign:"center"}} >
+                    <div className="card  border-0" style={{textAlign:"center"}} >
                         <a className="card-link" data-toggle="collapse" href="#collapseAdventure">
                             < ToggleButton show='true' />
                         </a>
                         <div id="collapseAdventure" className="collapse show" data-parent="#accordionAdventure">
-                            <div className="card-body">
+                            <div className="card-body"
+                                style={{
+                                    backgroundColor:"lightGrey",
+
+                                    border:"none",
+                                    marginTop:"20px"
+                                }}
+                            >
                                 <div className='row'>
-                                    <div className="col-sm-3 bg-warning" >
+                                    <div className="col-sm-3 " >
                                         <AdventureCard title="us" />
                                     </div>
-                                    <div className="col-sm-3 bg-warning" >
+                                    <div className="col-sm-3" >
                                         <AdventureCard title="canada" />
                                     </div>
-                                    <div className="col-sm-3 bg-warning" >
+                                    <div className="col-sm-3" >
                                         <AdventureCard title="china" />
                                     </div>
-                                    <div className="col-sm-3 bg-warning" >
+                                    <div className="col-sm-3" >
                                         <AdventureCard title="france" />
                                     </div>
                                 </div>
                                 <div className='row' style={{ marginTop: "10px" }}>
-                                    <div className="col-sm-3 bg-warning" >
+                                    <div className="col-sm-3" >
                                         <AdventureCard title="switzerland" />
                                     </div>
-                                    <div className="col-sm-3 bg-warning" >
+                                    <div className="col-sm-3" >
                                         <AdventureCard title="germany" />
                                     </div>
-                                    <div className="col-sm-3 bg-warning" >
+                                    <div className="col-sm-3" >
                                         <AdventureCard title="austria" />
                                     </div>
-                                    <div className="col-sm-3 bg-warning" >
+                                    <div className="col-sm-3" >
                                         <AdventureCard title="italy" />
                                     </div>
                                 </div>
@@ -118,22 +125,22 @@ function Features()
                     </div>
                 </div>
             </div>
-            <div id="arts" className="single-feature bg-danger" >
+            <div id="arts" className="single-feature " >
               <h3>Arts</h3>
-                <blockquote className="blockquote" style={{padding:"15px 50px 0"}} >
+                <blockquote className="blockquote"  >
                     <p>"  Art enables us to find ourselves and lose ourselves at the same time.  "</p>
-                    <footer className="blockquote-footer" style={{color:"#f5bcc4"}}>Thomas Merton</footer>
+                    <footer className="blockquote-footer" >Thomas Merton</footer>
                 </blockquote>
-                <blockquote className="blockquote" style={{padding:"0  50px 15px"}} >
+                <blockquote className="blockquote"  >
                     <p>"  To practice any art, no matter how well or how badly, is a way to make your soul grow, for heaven’s sake. So do it.  "</p>
-                    <footer className="blockquote-footer" style={{color:"#f5bcc4"}}>Kurt Vonnegut</footer>
+                    <footer className="blockquote-footer">Kurt Vonnegut</footer>
                 </blockquote>
 
                 <br />
                 <p style={{padding:"0 50px "}} >
                     I think of art as the highest level of creativity. To me, it is one of the greatest sources of enjoyment</p>
                 <div id="accordionArts">
-                    <div className="card bg-danger" style={{textAlign:"center"}}  >
+                    <div className="card border-0" style={{textAlign:"center"}}  >
                         <a className="card-link" data-toggle="collapse" href="#collapseArts">
                             <ToggleButton show='true' />
                         </a>
@@ -145,16 +152,16 @@ function Features()
                     </div>
                 </div>
             </div>
-            <div id="movies" className="single-feature bg-secondary" >
+            <div id="movies" className="single-feature " >
                 <h3>Movies</h3>
-                <blockquote className="blockquote" style={{padding:"15px 50px"}} >
+                <blockquote className="blockquote"  >
                 <p>"  The whole of life is just like watching a film. Only it's as though you always get in ten minutes after the big picture has started, and no-one will
                     tell you the plot, so you have to work it out all yourself from the clues.  " </p>
-                    <footer className="blockquote-footer" style={{color:"lightGray"}}>Terry Pratchett</footer>
+                    <footer className="blockquote-footer" >Terry Pratchett</footer>
 
                 </blockquote>
                 <div id="accordionMovies">
-                    <div className="card bg-secondary" style={{textAlign:"center"}} >
+                    <div className="card  border-0" style={{textAlign:"center"}} >
                         <a className="collapsed card-link" data-toggle="collapse" href="#collapseMovies">
                             <ToggleButton />
 
@@ -168,15 +175,15 @@ function Features()
                 </div>
 
             </div>
-            <div id="music" className="single-feature bg-success" >
+            <div id="music" className="single-feature" >
                 <h3>Music</h3>
-                <blockquote className="blockquote" style={{padding:"15px 50px"}} >
+                <blockquote className="blockquote " style={{padding:"15px 50px"}} >
                     <p>“  After silence, that which comes nearest to expressing the inexpressible is music. ” </p>
-                    <footer className="blockquote-footer" style={{color:"lightGray"}}>Aldous Huxley</footer>
+                    <footer className="blockquote-footer" >Aldous Huxley</footer>
                 </blockquote>
             <div id="accordionMusic">
-                <div className="card bg-success" style={{textAlign:"center"}} >
-                    <a className="collapsed card-link" data-toggle="collapse" href="#collapseMusic">
+                <div className="card border-0" style={{textAlign:"center"}} >
+                    <a className="collapsed card-link" data-toggle="collapse" href="#collapseMusic" >
                         <ToggleButton />
                     </a>
                     <div id="collapseMusic" className="collapse" data-parent="#accordionMusic">

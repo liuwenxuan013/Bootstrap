@@ -18,7 +18,7 @@ class ArtsCard extends React.Component
                     {context.info.arts.map(e =>
                     {
                         return (
-                            <div key={e.title} className="card" style={{ width: "100%" }}>
+                            <div key={e.title} className="card" style={{ width: "100%" ,backgroundColor:"white"}}>
                                 <img className="card-img-top" src={e.imgUrl} alt={e.desc} style={{ width: "100%" }} />
                                 <div className="card-body">
                                     <h4 className="card-title">{e.title}</h4>

@@ -26,12 +26,12 @@ class Profile extends React.Component
     render(){
 
     return (
-        <div >
+        <div className="profile" >
             <InfoContext.Consumer>
                 {(context) => {
 
                     return (
-                        <div>
+                        <div className="card ">
                             <div id="accordionInfo" >
                                 <div className="card " style={{padding:"40px"}}>
                                     <div className="row">
@@ -68,9 +68,9 @@ class Profile extends React.Component
                                     <br/>
                                 </div>
                                 <div className="row-right" >
-                                    <div className="toast" data-autohide="false" style={{backgroundColor:"lightBlue"}}>
+                                    <div className="toast" data-autohide="false" style={{backgroundColor:"lightGrey"}}>
                                         <div className="toast-header">
-                                            <strong className="mr-auto text-primary">Hello</strong>
+                                            <strong className="mr-auto text-secondary">Hello</strong>
                                             <small className="text-muted">Dismiss</small>
                                             <button type="button" className="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
                                         </div>
@@ -87,8 +87,8 @@ class Profile extends React.Component
                                     </div>
                                 </div>
                             </div>
-                            <div className="s-pro">
 
+                            <div className="card s-pro">
                             <div  id="accordionSummary" >
                                     <div className="card s-pro" >
                                         <a className="card-link" data-toggle="collapse" href="#collapseSummary">
@@ -108,7 +108,7 @@ class Profile extends React.Component
                                          {context.info.workExperience.map((e,index) => {
                                                 return (
                                                         <div key={index}>
-                                                            <h5 className="bg-info">{e.company}</h5>
+                                                            <h5 >{e.company}</h5>
                                                             <h6>{e.jobTitle}</h6>
                                                             <p>{e.start} To {e.end}</p>
                                                             <p>{e.description.overall}</p>
@@ -134,7 +134,7 @@ class Profile extends React.Component
                                     {context.info.education.map(e => {
                                         return (
                                             <div  key={e.school}>
-                                                    <h5 className="bg-info">{e.school}</h5>
+                                                    <h5 >{e.school}</h5>
                                                     <h6>{e.degree} - {e.major}</h6>
                                                     <p>{e.start} To {e.end} | {e.city},{e.country}</p>
                                                     <div id="collapseEducation" className="collapse show" data-parent="#accordionEducation">
@@ -180,8 +180,8 @@ class Profile extends React.Component
                                                     return (
                                                         <div key={index} className="card" style={{width: " 200px", height:"150px", float: "left"}}>
                                                             <img className="card-img-top" src={c.imgUrl}
-                                                                 alt={c.title} style={{width: "100%" ,height:"83%"}}/>
-                                                            <div className="card-body" style={{margin:0,padding:0,float: "left"}}>
+                                                                 alt={c.title} style={{width: "100%" ,height:"80%"}}/>
+                                                            <div className="card-body" style={{margin:0,padding:0,float: "left", overflow:"hidden"}}>
                                                                 <p className="card-text" style={{textAlign:"center",fontSize:"10px" ,margin:0,padding:0}}>{c.title}</p>
                                                                 <p className="card-text" style={{textAlign:"center",fontSize:"10px" ,margin:0,padding:0}}>{c.time}</p>
                                                             </div>

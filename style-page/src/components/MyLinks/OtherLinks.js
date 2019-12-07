@@ -38,6 +38,7 @@ function OtherLinks(){
                style={{marginRight:'10px'}}
                data-toggle="tooltip"
                title="Angular App"
+
             >
                 <img className="avatar info" src="https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg"
                      alt="angularIcon"

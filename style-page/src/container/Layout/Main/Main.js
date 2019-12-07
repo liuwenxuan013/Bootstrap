@@ -8,6 +8,7 @@ import Profile from './Profile/Profile';
 import Contact from './Contact/Contact';
 import { InfoContext, myInfo } from '../../../components/Info/Info';
 import './Main.css';
+import '../Layout.css';
 
 
 function Main()

@@ -6,20 +6,12 @@ class Contact extends React.Component {
     render() {
         return <div className="contact">
             <div className="center">
-            <ContactLink/>
+                <ContactLink/>
+
+                <MyLinks/>
             </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
 
 
-            <MyLinks/>
 
         </div>
     }

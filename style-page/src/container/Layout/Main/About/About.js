@@ -4,12 +4,12 @@ import { InfoContext } from '../../../../components/Info/Info';
 import "../Main.css";
 function About()
 {
-    return (<div>
+    return (<div >
 
             <InfoContext.Consumer>{
                 (context) =>
                 {
-                    return <div  >
+                    return <div className="aboutContainer" >
                                 <div className=" main-left card " >
                                     <img className="card-img-top" src="./images/idphoto.jpg" alt=" ID Card" />
                                     <div className="card-body">

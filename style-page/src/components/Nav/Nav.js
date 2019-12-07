@@ -24,7 +24,7 @@ function Nav()
                     <Link className="nav-link" to="/about">Why me?</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/features">Know more me</Link>
+                    <Link className="nav-link" to="/features">Know more about me</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/profile">Profile</Link>
