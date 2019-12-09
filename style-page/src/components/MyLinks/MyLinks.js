@@ -21,7 +21,7 @@ function MyLinks(){
 
     return (
         <div >
-            <a href="https://www.linkedin.com/in/wenxuan-liu-a77011158/"
+            <a href="https://www.linkedin.com/in/laura-liu-a77011158/"
                target="_blank"
                rel="noopener noreferrer">
                 < LinkedInIcon style={{marginRight:'10px'}} />
